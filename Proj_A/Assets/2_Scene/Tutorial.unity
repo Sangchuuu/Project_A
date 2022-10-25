@@ -229,8 +229,8 @@ GameObject:
   - component: {fileID: 2544025}
   - component: {fileID: 2544024}
   - component: {fileID: 2544023}
-  - component: {fileID: 2544026}
   - component: {fileID: 2544027}
+  - component: {fileID: 2544028}
   m_Layer: 6
   m_Name: Monster
   m_TagString: Untagged
@@ -316,25 +316,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2544021}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2544026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2544021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e2f1786c5b99f04fbc9a2ae0e1d9a55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 5
-  Site: 15
-  WaypointTrans: {fileID: 0}
-  PlayerTrans: {fileID: 0}
-  Istate: 2
-  objtarget: {fileID: 0}
-  isMove: 0
 --- !u!195 &2544027
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -357,6 +338,25 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &2544028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 895ed85e888ae564aae828b2e1a60f25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objTarget: {fileID: 340825599}
+  Speed: 5
+  Site: 5
+  objResponPoint: {fileID: 809931745}
+  objPatrolPoint: {fileID: 946839566}
+  isMove: 0
+  curAIState: 0
 --- !u!1001 &5793800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13702,7 +13702,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387574866}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -29.23, y: 0.85, z: 10.44}
+  m_LocalPosition: {x: -19.6, y: 0.85, z: 4.86}
   m_LocalScale: {x: 0.4, y: 1.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
