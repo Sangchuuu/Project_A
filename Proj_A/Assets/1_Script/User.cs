@@ -16,11 +16,6 @@ public class User : MonoBehaviour
     private float yRotate, yRotateMove;
     public float rotateSpeed = 500.0f;
 
-    //실험용
-    [SerializeField]
-    public bool canTel = true;
-    public float telRate;
-    float telDelay;
 
     void Start()
     {
@@ -37,6 +32,7 @@ public class User : MonoBehaviour
         h = Input.GetAxis("Horizontal");
         v = Input.GetAxis("Vertical");
 
+        
         Vector3 moveDir = (Vector3.forward * v) + (Vector3.right * h);
 
         transform.Translate(moveDir.normalized * Time.deltaTime * moveSpeed, Space.Self);
@@ -67,25 +63,11 @@ public class User : MonoBehaviour
 
         Camera.main.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + cameraH, this.transform.position.z);
 
-        //실험용
-        CanTeleport();
+
+
     }
 
-    //실험용
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "WayPoint")
-        {
-            telDelay = 0;
-        }
-    }
-    
-    //실험용
-    private void CanTeleport()
-    {
-        telDelay += Time.deltaTime;
-        canTel = telRate < telDelay;        
-    }
-    
+
+
 
 }
