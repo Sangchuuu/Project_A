@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject[] monsters;
     [SerializeField]
-    private bool istutorial;
+    private bool isTutorial;
     [SerializeField]
     private int maxSpawnMonster;
     [SerializeField]
@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (istutorial && curSpawnMonster < maxSpawnMonster)
+        if (isTutorial && curSpawnMonster < maxSpawnMonster)
         {
             StartCoroutine(SpawnEnemy());
         }
@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
                     enemyZones[ranPoint].rotation);
         curSpawnMonster++;
 
-        yield return new WaitForSeconds(2);
+        yield return null;
     }
     
 
