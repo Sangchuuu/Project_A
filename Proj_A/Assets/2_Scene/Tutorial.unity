@@ -246,7 +246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2544021}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.78, y: 0.49, z: 6.2}
+  m_LocalPosition: {x: -37.92, y: 0.49, z: 6.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -328,15 +328,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2f1786c5b99f04fbc9a2ae0e1d9a55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  r_indexnumber: 0
-  agent: {fileID: 2544027}
-  m_targetsarray:
-  - {fileID: 809931746}
-  - {fileID: 340825600}
-  - {fileID: 946839567}
-  target: {fileID: 1387574870}
-  Istate: 4
-  visited: 0
+  Speed: 5
+  Site: 15
+  WaypointTrans: {fileID: 0}
+  PlayerTrans: {fileID: 0}
+  Istate: 2
+  objtarget: {fileID: 0}
+  isMove: 0
 --- !u!195 &2544027
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13628,7 +13626,7 @@ GameObject:
   - component: {fileID: 1387574867}
   m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13704,7 +13702,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387574866}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -0.5, y: 0.85, z: 0}
+  m_LocalPosition: {x: -29.23, y: 0.85, z: 10.44}
   m_LocalScale: {x: 0.4, y: 1.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18725,7 +18723,7 @@ GameObject:
   - component: {fileID: 1973471451}
   - component: {fileID: 1973471449}
   - component: {fileID: 1973471448}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
