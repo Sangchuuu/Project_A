@@ -95,6 +95,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        //Debug.Log("플레이어 상태 : "+playermovestate);
         PlayerRayCast();
         StaminaBarController(nowstamina, maxstamina);
 
@@ -160,7 +161,7 @@ public class PlayerController : MonoBehaviour
 
         if (jumpstate == false)
         {
-            if (playermovestate == 1 || playermovestate == 2 || playermovestate == 3)
+            if (playermovestate == 1 || playermovestate == 2 || playermovestate == 3 || playermovestate ==6)
             {
                 if (Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(1))
                 {
@@ -179,7 +180,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (playermovestate == 1)
+        if (playermovestate == 1 || playermovestate ==6)
         {
             PlayerWalk();
         }
@@ -204,7 +205,7 @@ public class PlayerController : MonoBehaviour
 
         if (jumpstate == false)
         {
-            if (playermovestate == 1 || playermovestate == 2)
+            if (playermovestate == 1 || playermovestate == 2 || playermovestate == 6)
             {
                 if (Input.GetKeyDown(KeyCode.LeftShift))//달리기로 상태전환
                 {
@@ -232,7 +233,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.LeftControl))//앉기 상태 전환
             {
-                if (playermovestate == 1)
+                if (playermovestate == 1 || playermovestate == 6)
                 {
                     playermovestate = 3;
                 }
@@ -404,7 +405,7 @@ public class PlayerController : MonoBehaviour
     public void PlayerRayCast()
     {
         RaycastHit hit;
-        if (Input.GetKeyDown(KeyCode.E)||Input.GetMouseButton(0))
+        if (Input.GetKeyDown(KeyCode.E)||Input.GetMouseButtonDown(0))
         {
             string objectname = null;
 
@@ -440,6 +441,31 @@ public class PlayerController : MonoBehaviour
 
         }
 
+    }
+
+    public void pakuruOn()
+    {
+        playermovestate = 6;
+    }
+    public void pakuru2On()
+    {
+        playermovestate = 7;
+    }
+    public void pakuruOff()
+    {
+        playermovestate = 1;
+
+    }
+
+    public void GravityOff()
+    {
+        GetComponent<Rigidbody>().useGravity = false;
+        GetComponent<CapsuleCollider>().isTrigger = true;
+    }
+    public void GravityOn()
+    {
+        GetComponent<Rigidbody>().useGravity = true;
+        GetComponent<CapsuleCollider>().isTrigger = false;
     }
 
 }
