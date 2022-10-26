@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class MonsterAI01c : MonoBehaviour
 {
@@ -8,11 +9,16 @@ public class MonsterAI01c : MonoBehaviour
     public float Speed = 1;
     public float Site = 0.5f;
     public GameObject objResponPoint;
-    public GameObject objPatrolPoint;
+    //public GameObject objPatrolPoint;
     public bool isMove;
+    public GameObject m_objwaypoint;
 
+    [SerializeField]
+    private List<GameObject> objWayPoints = new List<GameObject>();
+    int i_coliders = 0;
     public enum E_AI_STATE { TRACKING, RETRUN, PATROL };
     public E_AI_STATE curAIState;
+    NavMeshAgent agent;
 
     void SetAIState(E_AI_STATE state)
     {
@@ -46,25 +52,23 @@ public class MonsterAI01c : MonoBehaviour
                 }
                 break;
             case E_AI_STATE.PATROL:
-                UpdatePatrol(objResponPoint, objPatrolPoint);
+                UpdatePatrol(m_objwaypoint);
                 break;
         }
     }
 
-    public void UpdatePatrol(GameObject objA, GameObject objB)
+    public void UpdatePatrol(GameObject objA)
     {
+        
         if (objTarget != null)
         {
+            objA = objWayPoints[i_coliders];
             if (isMove == false)
             {
-                if (objTarget.name == objA.name)
-                {
-                    objTarget = objB;
-                }
-                else if (objTarget.name == objB.name)
+                if (objTarget.tag == objA.tag)
                 {
                     objTarget = objA;
-                }
+                }               
 
             }
         }
@@ -73,11 +77,14 @@ public class MonsterAI01c : MonoBehaviour
 
     private void Awake()
     {
+        agent = GetComponent<NavMeshAgent>();
         //curAIState = E_AI_STATE.TRACKING;
+        UpdateFindTargetSphere();
     }
     private void Start()
     {
         //SetAIState(curAIState);
+        
     }
 
     // Update is called once per frame
@@ -88,15 +95,19 @@ public class MonsterAI01c : MonoBehaviour
         UpdateAIState();
 
         Debug.Log("State: " + curAIState);
+        Debug.Log("m_objwayPoint" + m_objwaypoint);
         Debug.Log("isMove: " + isMove);
     }
 
     private void FixedUpdate()
     {
-        if (UpdateFindTargetLayer())
-            SetAIState(E_AI_STATE.TRACKING);
-        UpdateFindTargetLayerAll();
-
+        /* if (UpdateFindTargetLayer())
+             SetAIState(E_AI_STATE.TRACKING);*/
+        //UpdateFindTargetLayerAll();
+        if (WayPointClear() == true)
+        {
+            UpdateFindTargetSphere();
+        }
     }
 
     void SetReturn()
@@ -106,28 +117,47 @@ public class MonsterAI01c : MonoBehaviour
 
     void UpdataMove()
     {
+        Speed = agent.speed;
+
         if (objTarget)
         {
-            Vector3 vTargetPos = objTarget.transform.position;
+            if(objTarget.layer == LayerMask.NameToLayer("Waypoint"))
+            {
+                objTarget = m_objwaypoint;
+            }
+
+            Vector3 vTargetPos = objTarget.gameObject.transform.position;
             vTargetPos.y = 0;
-            Vector3 vPos = this.transform.position;
+            Vector3 vPos = this.gameObject.transform.position;
             vPos.y = 0;
             Vector3 vDist = vTargetPos - vPos;
             Vector3 vDir = vDist.normalized;
             float fDist = vDist.magnitude;
 
-            if (fDist > Speed * Time.deltaTime)
+            if (fDist >= Speed * Time.deltaTime)
             {
-                transform.position += vDir * Speed * Time.deltaTime;
-                isMove = true;
+                agent.SetDestination(objTarget.transform.position);
+                //transform.position += vDir * Speed * Time.deltaTime;
+                isMove = true;               
             }
             else
             { 
-                isMove = false; 
+                isMove = false;
             }
 
            // Debug.Log("fDist: " + fDist);
         }
+    }
+
+    bool WayPointClear()
+    {
+        if (isMove == false)
+        {
+            objWayPoints.Clear();
+            return true;
+        }
+        else
+            return false;
     }
 
     bool UpdateFindTargetLayer()
@@ -157,6 +187,26 @@ public class MonsterAI01c : MonoBehaviour
             {
                 objTarget = collider.gameObject;
                 Debug.Log("FindTarget:" + collider.gameObject.name);
+            }
+        }
+    }
+
+    void UpdateFindTargetSphere()
+    {        
+        float fdist = 0;
+        Collider[] colliders = Physics.OverlapSphere(this.transform.position, Site);
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            if (colliders[i].CompareTag("Waypoint"))
+                objWayPoints.Add(colliders[i].gameObject);
+        }
+        for (int i = 0; i < objWayPoints.Count; i++)
+        {
+            float dist = (this.transform.position - objWayPoints[i].transform.position).magnitude;
+            if (fdist < dist)
+            {
+                fdist = dist;
+                m_objwaypoint = objWayPoints[i];
             }
         }
     }
