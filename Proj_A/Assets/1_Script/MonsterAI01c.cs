@@ -35,11 +35,15 @@ public class MonsterAI01c : MonoBehaviour
         {
             case E_AI_STATE.TRACKING:
                 if (objTarget == null)
+                {
                     SetAIState(E_AI_STATE.RETRUN);
+                }
                 break;
             case E_AI_STATE.RETRUN:
                 if (isMove == false)
+                {
                     SetAIState(E_AI_STATE.PATROL);
+                }
                 break;
             case E_AI_STATE.PATROL:
                 UpdatePatrol(objResponPoint, objPatrolPoint);
@@ -73,7 +77,7 @@ public class MonsterAI01c : MonoBehaviour
     }
     private void Start()
     {
-        SetAIState(curAIState);
+        //SetAIState(curAIState);
     }
 
     // Update is called once per frame
@@ -122,22 +126,22 @@ public class MonsterAI01c : MonoBehaviour
                 isMove = false; 
             }
 
-            Debug.Log("fDist: " + fDist);
+           // Debug.Log("fDist: " + fDist);
         }
     }
 
     bool UpdateFindTargetLayer()
     {
         int nLayer = 1 << LayerMask.NameToLayer("Player");
-        Collider2D collider =
-            Physics2D.OverlapCircle(this.transform.position, Site, nLayer);
+        Collider[] colliders =
+            Physics.OverlapSphere(this.transform.position, Site, nLayer);
 
-        if (collider)
+        /*if (colliders != null)
         {
-            objTarget = collider.gameObject;
-            Debug.Log("FindTarget:" + collider.gameObject.name);
+            objTarget = colliders.gameObject;
+            Debug.Log("FindTarget:" + GetComponent<Collider>().gameObject.name);
             return true;
-        }
+        }*/
         return false;
     }
 

@@ -49,9 +49,9 @@ public class PlayerCtrl : MonoBehaviour
     public float staminarecoverytime2 = 4f;
     private float staminarecoverytimeCycle = 0f;
 
-    private float staminaRGBmax = 200;
+    //private float staminaRGBmax = 200;
     public float staminaRGBdis = 100;
-    private float nowstaminaRGB = 0;
+    //private float nowstaminaRGB = 0;
     RawImage staminaRGB;
 
     [Space(15f)]
@@ -85,7 +85,7 @@ public class PlayerCtrl : MonoBehaviour
 
         playermovestate = 1;
 
-        nowstaminaRGB = 0;
+        //nowstaminaRGB = 0;
 
         //staminabarmax = staminabar1.transform.localScale; //���¹̳����� �ִ� ���̸� ����
 
