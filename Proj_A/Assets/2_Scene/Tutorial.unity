@@ -13623,7 +13623,8 @@ GameObject:
   - component: {fileID: 1387574870}
   - component: {fileID: 1387574869}
   - component: {fileID: 1387574868}
-  - component: {fileID: 1387574867}
+  - component: {fileID: 1387574871}
+  - component: {fileID: 1387574872}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -13631,19 +13632,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &1387574867
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387574866}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1387574868
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13701,15 +13689,64 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387574866}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -28.92, y: 0.85, z: 13.95}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.08, y: 0.85, z: 5.96}
   m_LocalScale: {x: 0.4, y: 1.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1973471452}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1387574871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387574866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe688a4a060f1a4f81968954c69aec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vcamera: {fileID: 1973471451}
+  flashlight: {fileID: 0}
+  walkSpeed: 3
+  runSpeed: 6
+  sitSpeed: 2
+  jumppos: 5
+  jumpTime: 0.6
+  slidingPower: 8
+  slidingTime: 1
+  cameraHstand: 0.85
+  cameraHsit: 0.4
+  maxstamina: 100
+  runstamina: 1
+  jumpstamina: 20
+  slidingstamina: 20
+  recoverystamina: 10
+  staminarecoverytime: 2
+  staminarecoverytime2: 4
+  staminaRGBdis: 100
+  staminabar1: {fileID: 0}
+  staminabar2: {fileID: 0}
+  PlayerCollider: {fileID: 1387574872}
+  rotateSpeed: 500
+--- !u!136 &1387574872
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387574866}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 0.99999994
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1391122860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18723,6 +18760,7 @@ GameObject:
   - component: {fileID: 1973471451}
   - component: {fileID: 1973471449}
   - component: {fileID: 1973471448}
+  - component: {fileID: 1973471453}
   m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -18796,14 +18834,27 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973471447}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.32352936, z: 0}
   m_LocalScale: {x: 1.4285716, y: 0.58823526, z: 2.4999998}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1387574870}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1973471453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973471447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da94f698a178a3745a63a745868fff98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 500
 --- !u!1 &1974485421
 GameObject:
   m_ObjectHideFlags: 0
