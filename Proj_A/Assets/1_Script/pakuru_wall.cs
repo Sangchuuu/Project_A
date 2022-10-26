@@ -21,6 +21,14 @@ public class pakuru_wall : MonoBehaviour
     private Vector3 way1;
     private Vector3 way2;
 
+    [Header("파쿠르 상승속도, 넘는속도, 하강속도")]
+
+    public float hspeed = 3f;
+    public float vspeed = 3f;
+    public float dspeed = 5f;
+
+    [Header("파쿠르 가능 범위 활성화 레이캐스트 길이")]
+    public float pakuruRay = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +51,7 @@ public class pakuru_wall : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                if (Physics.Raycast(vcamera.transform.position, vcamera.transform.forward, out hit, 5.0f))
+                if (Physics.Raycast(vcamera.transform.position, vcamera.transform.forward, out hit, pakuruRay))
                 {
                     GameObject ddd = hit.transform.gameObject; ;
 
@@ -53,27 +61,31 @@ public class pakuru_wall : MonoBehaviour
                     //Debug.Log("큐브1이 없다");
                     if (objectname == "pakuru_look")
                     {
-                        camerascript.pakuruOn();
-                        float startpoint1distance = Vector3.Distance(player.transform.position, startpoint1.transform.position);
-                        float startpoint2distance = Vector3.Distance(player.transform.position, startpoint2.transform.position);
-                        if (startpoint1distance > startpoint2distance)
-                        {
-                            pakurustate = 2;
-                            start1 = startpoint2.transform.position;
-                            way1 = waypoint2.transform.position;
-                            way2 = waypoint1.transform.position;
-                            start2 = startpoint1.transform.position;
+                        bool staminacheck= player.pakuruStamina();
 
-                        }
-                        else
+                        if (staminacheck == true)
                         {
-                            pakurustate = 2;
-                            start1 = startpoint1.transform.position;
-                            way1 = waypoint1.transform.position;
-                            way2 = waypoint2.transform.position;
-                            start2 = startpoint2.transform.position;
-                        }
+                            camerascript.pakuruOn();
+                            float startpoint1distance = Vector3.Distance(player.transform.position, startpoint1.transform.position);
+                            float startpoint2distance = Vector3.Distance(player.transform.position, startpoint2.transform.position);
+                            if (startpoint1distance > startpoint2distance)
+                            {
+                                pakurustate = 2;
+                                start1 = startpoint2.transform.position;
+                                way1 = waypoint2.transform.position;
+                                way2 = waypoint1.transform.position;
+                                start2 = startpoint1.transform.position;
 
+                            }
+                            else
+                            {
+                                pakurustate = 2;
+                                start1 = startpoint1.transform.position;
+                                way1 = waypoint1.transform.position;
+                                way2 = waypoint2.transform.position;
+                                start2 = startpoint2.transform.position;
+                            }
+                        }
 
                     }
                 }
@@ -95,7 +107,7 @@ public class pakuru_wall : MonoBehaviour
 
         if (pakurustate == 3)
         {
-            PlayerFollow(player.transform.position, way1, 3f);
+            PlayerFollow(player.transform.position, way1, hspeed);
 
             if ((int)player.transform.position.x == (int)way1.x && (int)player.transform.position.z == (int)way1.z && (int)player.transform.position.y == (int)way1.y)
             {
@@ -106,13 +118,13 @@ public class pakuru_wall : MonoBehaviour
 
         if (pakurustate == 4)
         {
-            PlayerFollow(player.transform.position, way2, 3f);
+            PlayerFollow(player.transform.position, way2, vspeed);
             Vector3 backrotate2 = vcamera.transform.eulerAngles;
             float bb = backrotate2.x;
             if (bb > 180)
                 bb -= 360;
-            float aa = Mathf.Lerp(bb, 0 , Time.deltaTime*3f);
-            if(aa < 0)
+            float aa = Mathf.Lerp(bb, 0, Time.deltaTime * 3f);
+            if (aa < 0)
                 aa += 360;
             backrotate2.x = aa;
             Debug.Log(backrotate2.x);
@@ -126,7 +138,7 @@ public class pakuru_wall : MonoBehaviour
 
         if (pakurustate == 5)
         {
-            PlayerFollow(player.transform.position, start2, 3f);
+            PlayerFollow(player.transform.position, start2, dspeed);
             //Vector3 backrotate2 = vcamera.transform.eulerAngles;
             //backrotate2.x = 45;
             //vcamera.transform.eulerAngles = backrotate2;

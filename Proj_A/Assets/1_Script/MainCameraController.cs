@@ -13,7 +13,8 @@ public class MainCameraController : MonoBehaviour
     void Update()
     {
 
-        
+        if (pakurubool == false)
+        {
             xRotateMove = -Input.GetAxis("Mouse Y") * Time.deltaTime * rotateSpeed;
             yRotateMove = Input.GetAxis("Mouse X") * Time.deltaTime * rotateSpeed;
             yRotate = transform.eulerAngles.y + yRotateMove;
@@ -22,14 +23,14 @@ public class MainCameraController : MonoBehaviour
             xRotate = xRotate + xRotateMove;
 
             xRotate = Mathf.Clamp(xRotate, -90, 90); // 위, 아래 고정
-        //if(pakurubool == true)
-        //{
-        //    yRotate = Mathf.Clamp(yRotate, -90, 90);
-        //}
-        
+                                                     //if(pakurubool == true)
+                                                     //{
+                                                     //    yRotate = Mathf.Clamp(yRotate, -90, 90);
+                                                     //}
+
             transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
-         
-       
+
+        }
     }
 
     public void MouseMove()
@@ -46,8 +47,8 @@ public class MainCameraController : MonoBehaviour
         {
             //xRotateMove = transform.rotation.eulerAngles.x;
             //yRotateMove = transform.rotation.eulerAngles.y;
-            //yRotate = transform.rotation.eulerAngles.y;
-            //xRotate = transform.rotation.eulerAngles.x;
+            yRotate = 0;
+            xRotate = 0;
             pakurubool = false;
         }
     }
