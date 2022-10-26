@@ -49,19 +49,28 @@ public class MonsterAI01c : MonoBehaviour
 
     public void UpdatePatrol(GameObject objA, GameObject objB)
     {
-        if (isMove == false)
+        if (objTarget != null)
         {
-            if (objTarget.name == objA.name)
+            if (isMove == false)
             {
-                objTarget = objB;
-            }
-            else if (objTarget.name == objB.name)
-            {
-                objTarget = objA;
+                if (objTarget.name == objA.name)
+                {
+                    objTarget = objB;
+                }
+                else if (objTarget.name == objB.name)
+                {
+                    objTarget = objA;
+                }
+
             }
         }
+
     }
 
+    private void Awake()
+    {
+        //curAIState = E_AI_STATE.TRACKING;
+    }
     private void Start()
     {
         SetAIState(curAIState);
@@ -73,13 +82,16 @@ public class MonsterAI01c : MonoBehaviour
         UpdataMove();
 
         UpdateAIState();
+
+        Debug.Log("State: " + curAIState);
+        Debug.Log("isMove: " + isMove);
     }
 
     private void FixedUpdate()
     {
         if (UpdateFindTargetLayer())
             SetAIState(E_AI_STATE.TRACKING);
-        //UpdateFindTargetLayerAll();
+        UpdateFindTargetLayerAll();
 
     }
 
@@ -93,7 +105,9 @@ public class MonsterAI01c : MonoBehaviour
         if (objTarget)
         {
             Vector3 vTargetPos = objTarget.transform.position;
+            vTargetPos.y = 0;
             Vector3 vPos = this.transform.position;
+            vPos.y = 0;
             Vector3 vDist = vTargetPos - vPos;
             Vector3 vDir = vDist.normalized;
             float fDist = vDist.magnitude;
@@ -104,7 +118,11 @@ public class MonsterAI01c : MonoBehaviour
                 isMove = true;
             }
             else
-                isMove = false;
+            { 
+                isMove = false; 
+            }
+
+            Debug.Log("fDist: " + fDist);
         }
     }
 
