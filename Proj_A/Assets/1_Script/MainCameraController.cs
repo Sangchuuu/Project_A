@@ -13,8 +13,7 @@ public class MainCameraController : MonoBehaviour
     private void Start()
     {
         Cursor.visible = false;
-        yRotate = 0;
-        xRotate = 0;
+
     }
     void Update()
     {

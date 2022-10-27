@@ -332,11 +332,16 @@ public class PlayerController : MonoBehaviour
 
     public void PlayerRotate()
     {
-        yRotateMove = Input.GetAxis("Mouse X") * Time.deltaTime * rotateSpeed;
+        //yRotateMove = Input.GetAxis("Mouse X") * Time.deltaTime * rotateSpeed;
 
-        yRotate = transform.eulerAngles.y + yRotateMove;
+        //yRotate = transform.eulerAngles.y + yRotateMove;
 
-        transform.eulerAngles = new Vector3(transform.eulerAngles.x, yRotate, 0);
+        //transform.eulerAngles = new Vector3(transform.eulerAngles.x, yRotate, 0);
+
+        Vector3 aa = vcamera.transform.eulerAngles;
+        aa.z = 0;
+        aa.x = 0;
+        transform.eulerAngles = aa;
     }
 
     public void Playerjump()
