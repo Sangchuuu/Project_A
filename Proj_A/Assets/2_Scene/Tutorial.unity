@@ -6621,18 +6621,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4166ca63bd5a1874ca8000f14fbd51d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyZones:
-  - {fileID: 1497830732}
-  - {fileID: 1955061258}
-  - {fileID: 0}
-  - {fileID: 1404880907}
-  monsters:
-  - {fileID: 4205594022739992061, guid: ecb32275d27e13847844ac0cde11cabb, type: 3}
-  - {fileID: 7914858750191822246, guid: 6ee0c3a879498cc4390fc46cd413ed74, type: 3}
-  - {fileID: 8040168077138498867, guid: 1cdf29b95b8b1e443aae19048c0027ba, type: 3}
+  enemyZones: []
+  monsters: []
   isTutorial: 0
   maxSpawnMonster: 5
   curSpawnMonster: 0
+  bigRoomzones: []
+  bigRooms: []
 --- !u!4 &655723339
 Transform:
   m_ObjectHideFlags: 0
@@ -15783,11 +15778,6 @@ Transform:
   m_Father: {fileID: 324937786}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1497830732 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3660709441971338792, guid: 83098e292eb71e3449f376c9fb861307, type: 3}
-  m_PrefabInstance: {fileID: 3660709442663066468}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1502565177 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1412212320913287896, guid: 065321e7a16b6d84aaf606fdaf96021b, type: 3}

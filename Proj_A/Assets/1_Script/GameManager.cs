@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour
     private int maxSpawnMonster;
     [SerializeField]
     private int curSpawnMonster;
+    [SerializeField]
+    private Transform[] bigRoomzones;
+    [SerializeField]
+    private GameObject[] bigRooms;
 
     void Start()
     {
@@ -41,6 +45,11 @@ public class GameManager : MonoBehaviour
                     enemyZones[ranPoint].rotation);
         curSpawnMonster++;
 
+        yield return null;
+    }
+
+    IEnumerator SpawnBig()
+    {
         yield return null;
     }
     
