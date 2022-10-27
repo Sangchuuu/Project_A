@@ -362,6 +362,7 @@
 "Assets/1_Script/MainCameraController.cs"
 "Assets/1_Script/MonsterAi.cs"
 "Assets/1_Script/PlayerController.cs"
+"Assets/1_Script/SceneChange.cs"
 "Assets/1_Script/User.cs"
 "Assets/1_Script/WayPoint.cs"
 -langversion:9.0
