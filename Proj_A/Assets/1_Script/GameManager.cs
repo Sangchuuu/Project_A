@@ -18,19 +18,15 @@ public class GameManager : MonoBehaviour
     
     //πÊ º“»Ø
     [SerializeField]
-    private bool mainStage;
+    private bool mainStage;   
     [SerializeField]
-    private Transform[] bigRoomZones;
+    private Transform[] backUpBRZ;
     [SerializeField]
+    private GameObject[] backUpBR;
     private GameObject[] bigRooms;
-    [SerializeField]
-    private Transform[] middleRoomZones;
-    [SerializeField]
-    private GameObject[] middleRooms;
-    [SerializeField]
-    private Transform[] smallRoomZones;
-    [SerializeField]
-    private GameObject[] smallRooms;
+    private Transform[] bigRoomZones;
+    
+    
 
 
 
@@ -65,7 +61,18 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        
+        bigRoomZones = new Transform[backUpBRZ.Length];
+        for(int i = 0; i < backUpBRZ.Length; i++)
+        {
+            bigRoomZones[i] = backUpBRZ[i];
+        }
+
+        bigRooms = new GameObject[backUpBR.Length];
+        for(int i = 0; i < backUpBR.Length; i++)
+        {
+            bigRooms[i] = backUpBR[i];
+        }
+
     }
 
     // Update is called once per frame
@@ -97,7 +104,8 @@ public class GameManager : MonoBehaviour
     }
     
     void BigRoom()
-    {        
+    {
+        
         for(int x = 0; x < bigRooms.Length; ++x)
         {
             int ranRoom = Random.Range(0, bigRooms.Length);
@@ -105,6 +113,7 @@ public class GameManager : MonoBehaviour
             Instantiate(bigRooms[ranRoom],
                         bigRoomZones[ranPoint].position,
                         bigRoomZones[ranPoint].rotation);
+
         }
 
     }

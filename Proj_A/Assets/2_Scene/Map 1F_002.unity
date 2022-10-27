@@ -2763,18 +2763,14 @@ MonoBehaviour:
   maxSpawnMonster: 0
   curSpawnMonster: 0
   mainStage: 0
-  bigRoomZones:
+  backUpBRZ:
   - {fileID: 1041849548}
   - {fileID: 484320612}
   - {fileID: 1692248810}
-  bigRooms:
+  backUpBR:
   - {fileID: 3761578507996044923, guid: ee46b7513f1fbb84b80222b6b0f1458e, type: 3}
   - {fileID: 3761578507996044923, guid: ee46b7513f1fbb84b80222b6b0f1458e, type: 3}
   - {fileID: 3761578507996044923, guid: ee46b7513f1fbb84b80222b6b0f1458e, type: 3}
-  middleRoomZones: []
-  middleRooms: []
-  smallRoomZones: []
-  smallRooms: []
 --- !u!4 &114872731
 Transform:
   m_ObjectHideFlags: 0
@@ -39359,12 +39355,8 @@ MonoBehaviour:
   maxSpawnMonster: 5
   curSpawnMonster: 0
   mainStage: 0
-  bigRoomZones: []
-  bigRooms: []
-  middleRoomZones: []
-  middleRooms: []
-  smallRoomZones: []
-  smallRooms: []
+  backUpBRZ: []
+  backUpBR: []
 --- !u!1001 &1845472058
 PrefabInstance:
   m_ObjectHideFlags: 0
