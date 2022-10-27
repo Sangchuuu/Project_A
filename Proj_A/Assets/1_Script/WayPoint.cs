@@ -47,7 +47,7 @@ public class WayPoint : MonoBehaviour
 
     private void Awake()
     {
-        m_fDetectLength = 10f;
+        m_fDetectLength = 100f;
     }
     private void Start()
     {
