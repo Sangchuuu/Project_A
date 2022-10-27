@@ -420,6 +420,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E)||Input.GetMouseButtonDown(0))
         {
             string objectname = null;
+            string objecttag = null;
 
             if (Physics.Raycast(vcamera.transform.position, vcamera.transform.forward, out hit, PlayerRaycastL))
             {
@@ -429,6 +430,7 @@ public class PlayerController : MonoBehaviour
 
                 Debug.Log(objectHit.name);
                 objectname = objectHit.name;
+                objecttag = objectHit.tag;
 
                 if (objectname == "door")
                 {
@@ -443,6 +445,15 @@ public class PlayerController : MonoBehaviour
                     gameObject.GetComponent<BloodyDoor>().ChangeDoorState();
 
                 }
+
+             
+
+                if(objecttag == "Item")
+                {
+                    gameObject = hit.transform.gameObject;
+                    gameObject.GetComponent<Item1>().Item1drop();
+                }
+
 
             }
             else

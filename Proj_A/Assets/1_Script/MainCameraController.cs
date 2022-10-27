@@ -10,6 +10,12 @@ public class MainCameraController : MonoBehaviour
     RaycastHit hit;
     bool pakurubool = false;
 
+    private void Start()
+    {
+        Cursor.visible = false;
+        yRotate = 0;
+        xRotate = 0;
+    }
     void Update()
     {
 

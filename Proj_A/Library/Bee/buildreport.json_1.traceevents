@@ -1,0 +1,620 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1666836065034691, "dur": 989501, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666836065035027, "dur": 10292, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666836065045323, "dur": 968570, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666836066013895, "dur": 10295, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666836066025216, "dur": 22, "ph": "X", "name": "", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1666836065073616, "dur":1739, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065075368, "dur":215, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1666836065075634, "dur":35, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1666836065075671, "dur":434, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1666836065076144, "dur":1487, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065077631, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985392, "dur":305, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985697, "dur":26, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985723, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985727, "dur":28, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985755, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985760, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985772, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985775, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985783, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985786, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985794, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985797, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985806, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985809, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985818, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985820, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985831, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985842, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065985862, "dur":2317, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1666836065076660, "dur":1001, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065077666, "dur":7481, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085165, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085167, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085245, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085249, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085301, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085357, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085400, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085456, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085502, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085562, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085605, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085660, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085729, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085784, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085841, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085902, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085946, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666836065085995, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065086040, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666836065086084, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065086124, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666836065086170, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065086214, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666836065086260, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065086303, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666836065086369, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065086424, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666836065086477, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065086525, "dur":157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666836065086682, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065086798, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666836065086850, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065086898, "dur":247808, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666836065334707, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666836065334777, "dur":650612, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065076892, "dur":800, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065077692, "dur":7464, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065085165, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1666836065085269, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065085325, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1666836065085389, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065085436, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":2, "ts":1666836065085493, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065085536, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1666836065085611, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065085658, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666836065085708, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065085753, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666836065085800, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065085848, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666836065085905, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065085953, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086002, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086046, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086093, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086135, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086183, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086225, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086269, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086306, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086351, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086397, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086444, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086485, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086529, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086572, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086726, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086792, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086847, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065086897, "dur":75960, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666836065162858, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065162915, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666836065162974, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065163026, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666836065163070, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065163112, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666836065163157, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065163201, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666836065163245, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065163286, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":2, "ts":1666836065163436, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065163506, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1666836065163568, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065164313, "dur":3119, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1666836065167487, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d6/d633c3301ef55842d76105a046b90fe9.vis" }}
+,{ "pid":12345, "tid":2, "ts":1666836065167548, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065167680, "dur":970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d6/d633c3301ef55842d76105a046b90fe9.vis" }}
+,{ "pid":12345, "tid":2, "ts":1666836065168699, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d6/d633c3301ef55842d76105a046b90fe9.rsc.sse" }}
+,{ "pid":12345, "tid":2, "ts":1666836065168758, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065168768, "dur":1269, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d6/d633c3301ef55842d76105a046b90fe9.rsc.sse" }}
+,{ "pid":12345, "tid":2, "ts":1666836065170089, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d6/d633c3301ef55842d76105a046b90fe9.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065170143, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065170154, "dur":1024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d6/d633c3301ef55842d76105a046b90fe9.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065171230, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d6/d633c3301ef55842d76105a046b90fe9.iws.sse" }}
+,{ "pid":12345, "tid":2, "ts":1666836065171285, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065171325, "dur":909, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d6/d633c3301ef55842d76105a046b90fe9.iws.sse" }}
+,{ "pid":12345, "tid":2, "ts":1666836065172282, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d6/d633c3301ef55842d76105a046b90fe9.ecm" }}
+,{ "pid":12345, "tid":2, "ts":1666836065172334, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065172344, "dur":824, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d6/d633c3301ef55842d76105a046b90fe9.ecm" }}
+,{ "pid":12345, "tid":2, "ts":1666836065173218, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d6/d633c3301ef55842d76105a046b90fe9.caw" }}
+,{ "pid":12345, "tid":2, "ts":1666836065173268, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065173278, "dur":888, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d6/d633c3301ef55842d76105a046b90fe9.caw" }}
+,{ "pid":12345, "tid":2, "ts":1666836065174214, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d1/d1613e362dd6327f13c97d36b9fab95a.vis" }}
+,{ "pid":12345, "tid":2, "ts":1666836065174266, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065174318, "dur":863, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d1/d1613e362dd6327f13c97d36b9fab95a.vis" }}
+,{ "pid":12345, "tid":2, "ts":1666836065175228, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d1/d1613e362dd6327f13c97d36b9fab95a.rsc.sse" }}
+,{ "pid":12345, "tid":2, "ts":1666836065175281, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065175292, "dur":1205, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d1/d1613e362dd6327f13c97d36b9fab95a.rsc.sse" }}
+,{ "pid":12345, "tid":2, "ts":1666836065176547, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d1/d1613e362dd6327f13c97d36b9fab95a.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065176777, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065176790, "dur":895, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d1/d1613e362dd6327f13c97d36b9fab95a.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065177734, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d1/d1613e362dd6327f13c97d36b9fab95a.iws.sse" }}
+,{ "pid":12345, "tid":2, "ts":1666836065177789, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065177799, "dur":926, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d1/d1613e362dd6327f13c97d36b9fab95a.iws.sse" }}
+,{ "pid":12345, "tid":2, "ts":1666836065178774, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d1/d1613e362dd6327f13c97d36b9fab95a.ecm" }}
+,{ "pid":12345, "tid":2, "ts":1666836065178826, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065178837, "dur":1706, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d1/d1613e362dd6327f13c97d36b9fab95a.ecm" }}
+,{ "pid":12345, "tid":2, "ts":1666836065180595, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d1/d1613e362dd6327f13c97d36b9fab95a.caw" }}
+,{ "pid":12345, "tid":2, "ts":1666836065180648, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065180659, "dur":928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/d1/d1613e362dd6327f13c97d36b9fab95a.caw" }}
+,{ "pid":12345, "tid":2, "ts":1666836065181637, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/c8/c89481d4d50ab42b4ac43b6ad66ac5ec.vis" }}
+,{ "pid":12345, "tid":2, "ts":1666836065181689, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065181769, "dur":937, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/c8/c89481d4d50ab42b4ac43b6ad66ac5ec.vis" }}
+,{ "pid":12345, "tid":2, "ts":1666836065182760, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/c8/c89481d4d50ab42b4ac43b6ad66ac5ec.rsc.sse" }}
+,{ "pid":12345, "tid":2, "ts":1666836065182817, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065182827, "dur":1402, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/c8/c89481d4d50ab42b4ac43b6ad66ac5ec.rsc.sse" }}
+,{ "pid":12345, "tid":2, "ts":1666836065184280, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/c8/c89481d4d50ab42b4ac43b6ad66ac5ec.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065184336, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065184346, "dur":5362, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/c8/c89481d4d50ab42b4ac43b6ad66ac5ec.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065189765, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a0a71308f0d8a80b6bd49d4b521c230a.vis" }}
+,{ "pid":12345, "tid":2, "ts":1666836065189830, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065189886, "dur":1470, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a0a71308f0d8a80b6bd49d4b521c230a.vis" }}
+,{ "pid":12345, "tid":2, "ts":1666836065191414, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a0a71308f0d8a80b6bd49d4b521c230a.caw" }}
+,{ "pid":12345, "tid":2, "ts":1666836065191470, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065191481, "dur":1196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a0a71308f0d8a80b6bd49d4b521c230a.caw" }}
+,{ "pid":12345, "tid":2, "ts":1666836065192733, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a09b58fcdb796fb4e8582266e1e34891.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065192806, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065192815, "dur":1137, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a09b58fcdb796fb4e8582266e1e34891.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065194013, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a09b58fcdb796fb4e8582266e1e34891.ecm" }}
+,{ "pid":12345, "tid":2, "ts":1666836065194071, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065194082, "dur":1016, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a09b58fcdb796fb4e8582266e1e34891.ecm" }}
+,{ "pid":12345, "tid":2, "ts":1666836065195145, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/4b/4b7700eee6e1e84dc53b14c54a63e33a.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065195201, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065195254, "dur":1647, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/4b/4b7700eee6e1e84dc53b14c54a63e33a.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065196950, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/43/4386e2c78e6e3179d9c15d5c6638bb3c.rsc.sse" }}
+,{ "pid":12345, "tid":2, "ts":1666836065197002, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065197045, "dur":1993, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/43/4386e2c78e6e3179d9c15d5c6638bb3c.rsc.sse" }}
+,{ "pid":12345, "tid":2, "ts":1666836065199089, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/38/389df1ebf12daaf0e30c82d62c5f33dc.vis" }}
+,{ "pid":12345, "tid":2, "ts":1666836065199155, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065199213, "dur":994, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/38/389df1ebf12daaf0e30c82d62c5f33dc.vis" }}
+,{ "pid":12345, "tid":2, "ts":1666836065200264, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/38/389df1ebf12daaf0e30c82d62c5f33dc.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065200326, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065200438, "dur":1164, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/38/389df1ebf12daaf0e30c82d62c5f33dc.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065201660, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/38/389df1ebf12daaf0e30c82d62c5f33dc.ecm" }}
+,{ "pid":12345, "tid":2, "ts":1666836065201721, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065201731, "dur":898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/38/389df1ebf12daaf0e30c82d62c5f33dc.ecm" }}
+,{ "pid":12345, "tid":2, "ts":1666836065202683, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/2b/2b8563d644d365c3fb11b05527a96c1a.vis" }}
+,{ "pid":12345, "tid":2, "ts":1666836065202762, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065202823, "dur":1097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/2b/2b8563d644d365c3fb11b05527a96c1a.vis" }}
+,{ "pid":12345, "tid":2, "ts":1666836065203971, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/2b/2b8563d644d365c3fb11b05527a96c1a.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065204033, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065204047, "dur":860, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/2b/2b8563d644d365c3fb11b05527a96c1a.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065204961, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/2b/2b8563d644d365c3fb11b05527a96c1a.caw" }}
+,{ "pid":12345, "tid":2, "ts":1666836065205028, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065205036, "dur":828, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/2b/2b8563d644d365c3fb11b05527a96c1a.caw" }}
+,{ "pid":12345, "tid":2, "ts":1666836065205911, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/1f/1f712f4ca1023df697a32180de8bf209.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065205967, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065205976, "dur":1287, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/1f/1f712f4ca1023df697a32180de8bf209.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065207320, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/1f/1f712f4ca1023df697a32180de8bf209.ecm" }}
+,{ "pid":12345, "tid":2, "ts":1666836065207391, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065207404, "dur":935, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/1f/1f712f4ca1023df697a32180de8bf209.ecm" }}
+,{ "pid":12345, "tid":2, "ts":1666836065208393, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/15d9a02166399f9fbdb62e2d5c059e09.rsc.sse" }}
+,{ "pid":12345, "tid":2, "ts":1666836065208479, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065208492, "dur":1332, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/15d9a02166399f9fbdb62e2d5c059e09.rsc.sse" }}
+,{ "pid":12345, "tid":2, "ts":1666836065209875, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/15d9a02166399f9fbdb62e2d5c059e09.caw" }}
+,{ "pid":12345, "tid":2, "ts":1666836065209927, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065209936, "dur":862, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/15d9a02166399f9fbdb62e2d5c059e09.caw" }}
+,{ "pid":12345, "tid":2, "ts":1666836065210848, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/150dadd0ea9af0a5b3421bdd3d07c9d4.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065210900, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065210907, "dur":1015, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/150dadd0ea9af0a5b3421bdd3d07c9d4.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065211979, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/150dadd0ea9af0a5b3421bdd3d07c9d4.iws.sse" }}
+,{ "pid":12345, "tid":2, "ts":1666836065212041, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065212054, "dur":1082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/150dadd0ea9af0a5b3421bdd3d07c9d4.iws.sse" }}
+,{ "pid":12345, "tid":2, "ts":1666836065213185, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/0a/0ac2ced4a10459b00f227a6770da987e.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065213486, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065213493, "dur":1321, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/0a/0ac2ced4a10459b00f227a6770da987e.rgb" }}
+,{ "pid":12345, "tid":2, "ts":1666836065214869, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":2, "ts":1666836065215017, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065215062, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1666836065215118, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065215127, "dur":81800, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1666836065296986, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1666836065297059, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666836065297206, "dur":1131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1666836065298390, "dur":686978, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065076744, "dur":926, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065077670, "dur":7487, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065085166, "dur":510, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1666836065085677, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065085726, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065085789, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065085838, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065085892, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065085936, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065085981, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065086024, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065086073, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065086115, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065086164, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065086211, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065086260, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065086304, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065086350, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065086400, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065086447, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065086493, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065086539, "dur":172, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065086712, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065086777, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065086822, "dur":45030, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065131853, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065131932, "dur":799, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065132731, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065132795, "dur":738, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065133534, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065133598, "dur":658, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065134256, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065134314, "dur":25870, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065160184, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065160273, "dur":1014, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065161287, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065161371, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065161438, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065161489, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065161542, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065161588, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065161637, "dur":271, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065161909, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065161957, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162003, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162046, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162090, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162137, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162177, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162221, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162261, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162305, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162345, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162390, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162438, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162481, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162522, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162565, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162603, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162648, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162690, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162729, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162765, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162820, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162858, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162903, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162949, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065162993, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065163035, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065163079, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065163120, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065163164, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065163207, "dur":88075, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065251292, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065251370, "dur":45547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666836065296973, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":3, "ts":1666836065297054, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666836065297066, "dur":1256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":3, "ts":1666836065298378, "dur":687012, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666836065076797, "dur":882, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666836065077679, "dur":7479, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666836065085166, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1666836065085266, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666836065085330, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1666836065085398, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666836065085448, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666836065085515, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666836065085606, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666836065085673, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666836065085723, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666836065085776, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666836065085823, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666836065085870, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666836065085917, "dur":210609, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666836065296527, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666836065296629, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1666836065296715, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666836065296728, "dur":1362, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1666836065298154, "dur":687250, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065076929, "dur":770, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065077700, "dur":7519, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065085220, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1666836065085314, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065085365, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1666836065085416, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065085462, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//UnityPlayer.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666836065085528, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065085614, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666836065085686, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065085741, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666836065085799, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065085846, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666836065085900, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065085950, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666836065086007, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065086057, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666836065086111, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065086154, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666836065086203, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065086248, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666836065086298, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065086341, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666836065086394, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065086439, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666836065086506, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065086557, "dur":165, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666836065086722, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065086779, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666836065086830, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065086876, "dur":108128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666836065195004, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065195065, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/4b/4b7700eee6e1e84dc53b14c54a63e33a.vis" }}
+,{ "pid":12345, "tid":5, "ts":1666836065195127, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065195210, "dur":1231, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/4b/4b7700eee6e1e84dc53b14c54a63e33a.vis" }}
+,{ "pid":12345, "tid":5, "ts":1666836065196496, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/4b/4b7700eee6e1e84dc53b14c54a63e33a.ecm" }}
+,{ "pid":12345, "tid":5, "ts":1666836065196551, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065196562, "dur":958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/4b/4b7700eee6e1e84dc53b14c54a63e33a.ecm" }}
+,{ "pid":12345, "tid":5, "ts":1666836065197572, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/43/4386e2c78e6e3179d9c15d5c6638bb3c.rgb" }}
+,{ "pid":12345, "tid":5, "ts":1666836065197629, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065197640, "dur":15221, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/43/4386e2c78e6e3179d9c15d5c6638bb3c.rgb" }}
+,{ "pid":12345, "tid":5, "ts":1666836065212917, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/0a/0ac2ced4a10459b00f227a6770da987e.rsc.sse" }}
+,{ "pid":12345, "tid":5, "ts":1666836065212987, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065213000, "dur":1274, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/0a/0ac2ced4a10459b00f227a6770da987e.rsc.sse" }}
+,{ "pid":12345, "tid":5, "ts":1666836065214331, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1666836065214395, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666836065214404, "dur":756995, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1666836065985342, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":5, "ts":1666836065985344, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065076974, "dur":735, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065077710, "dur":7501, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065085214, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1666836065085296, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065085344, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":6, "ts":1666836065085411, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065085454, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666836065085511, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065085600, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666836065085708, "dur":657, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065086365, "dur":357, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666836065086722, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065086789, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666836065086847, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065086897, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666836065086959, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065087003, "dur":738, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666836065087741, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065087813, "dur":26425, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666836065114239, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065114319, "dur":36253, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666836065150573, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065150663, "dur":909, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666836065151573, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065151649, "dur":32693, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666836065184342, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065184412, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/c8/c89481d4d50ab42b4ac43b6ad66ac5ec.iws.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065184480, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065184502, "dur":1183, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/c8/c89481d4d50ab42b4ac43b6ad66ac5ec.iws.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065185742, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/c8/c89481d4d50ab42b4ac43b6ad66ac5ec.caw" }}
+,{ "pid":12345, "tid":6, "ts":1666836065185806, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065185820, "dur":929, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/c8/c89481d4d50ab42b4ac43b6ad66ac5ec.caw" }}
+,{ "pid":12345, "tid":6, "ts":1666836065186804, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/b2/b2d80a98bd92090d651ecaecaf177a81.rsc.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065186864, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065186872, "dur":1556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/b2/b2d80a98bd92090d651ecaecaf177a81.rsc.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065188482, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/b2/b2d80a98bd92090d651ecaecaf177a81.ecm" }}
+,{ "pid":12345, "tid":6, "ts":1666836065188573, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065188584, "dur":1260, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/b2/b2d80a98bd92090d651ecaecaf177a81.ecm" }}
+,{ "pid":12345, "tid":6, "ts":1666836065189903, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a0a71308f0d8a80b6bd49d4b521c230a.rsc.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065189960, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065189968, "dur":1381, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a0a71308f0d8a80b6bd49d4b521c230a.rsc.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065191406, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a0a71308f0d8a80b6bd49d4b521c230a.ecm" }}
+,{ "pid":12345, "tid":6, "ts":1666836065191462, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065191470, "dur":1196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a0a71308f0d8a80b6bd49d4b521c230a.ecm" }}
+,{ "pid":12345, "tid":6, "ts":1666836065192722, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a09b58fcdb796fb4e8582266e1e34891.rsc.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065192803, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065192813, "dur":1519, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a09b58fcdb796fb4e8582266e1e34891.rsc.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065194385, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a09b58fcdb796fb4e8582266e1e34891.caw" }}
+,{ "pid":12345, "tid":6, "ts":1666836065194448, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065194458, "dur":911, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a09b58fcdb796fb4e8582266e1e34891.caw" }}
+,{ "pid":12345, "tid":6, "ts":1666836065195419, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/4b/4b7700eee6e1e84dc53b14c54a63e33a.iws.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065195481, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065195488, "dur":1352, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/4b/4b7700eee6e1e84dc53b14c54a63e33a.iws.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065196895, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/4b/4b7700eee6e1e84dc53b14c54a63e33a.caw" }}
+,{ "pid":12345, "tid":6, "ts":1666836065196960, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065196971, "dur":886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/4b/4b7700eee6e1e84dc53b14c54a63e33a.caw" }}
+,{ "pid":12345, "tid":6, "ts":1666836065197907, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/43/4386e2c78e6e3179d9c15d5c6638bb3c.iws.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065197963, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065197972, "dur":1133, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/43/4386e2c78e6e3179d9c15d5c6638bb3c.iws.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065199149, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/38/389df1ebf12daaf0e30c82d62c5f33dc.rsc.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065199205, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065199216, "dur":1571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/38/389df1ebf12daaf0e30c82d62c5f33dc.rsc.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065200839, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/38/389df1ebf12daaf0e30c82d62c5f33dc.iws.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065200893, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065200903, "dur":905, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/38/389df1ebf12daaf0e30c82d62c5f33dc.iws.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065201859, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/38/389df1ebf12daaf0e30c82d62c5f33dc.caw" }}
+,{ "pid":12345, "tid":6, "ts":1666836065201914, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065201923, "dur":908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/38/389df1ebf12daaf0e30c82d62c5f33dc.caw" }}
+,{ "pid":12345, "tid":6, "ts":1666836065202884, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/2b/2b8563d644d365c3fb11b05527a96c1a.rsc.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065202947, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065202955, "dur":1321, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/2b/2b8563d644d365c3fb11b05527a96c1a.rsc.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065204328, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/2b/2b8563d644d365c3fb11b05527a96c1a.ecm" }}
+,{ "pid":12345, "tid":6, "ts":1666836065204382, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065204390, "dur":923, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/2b/2b8563d644d365c3fb11b05527a96c1a.ecm" }}
+,{ "pid":12345, "tid":6, "ts":1666836065205372, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/1f/1f712f4ca1023df697a32180de8bf209.vis" }}
+,{ "pid":12345, "tid":6, "ts":1666836065205437, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065205493, "dur":977, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/1f/1f712f4ca1023df697a32180de8bf209.vis" }}
+,{ "pid":12345, "tid":6, "ts":1666836065206523, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/1f/1f712f4ca1023df697a32180de8bf209.iws.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065206607, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065206621, "dur":1004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/1f/1f712f4ca1023df697a32180de8bf209.iws.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065207675, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/15d9a02166399f9fbdb62e2d5c059e09.vis" }}
+,{ "pid":12345, "tid":6, "ts":1666836065207735, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065207791, "dur":877, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/15d9a02166399f9fbdb62e2d5c059e09.vis" }}
+,{ "pid":12345, "tid":6, "ts":1666836065208713, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/15d9a02166399f9fbdb62e2d5c059e09.iws.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065208769, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065208778, "dur":1265, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/15d9a02166399f9fbdb62e2d5c059e09.iws.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065210091, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/150dadd0ea9af0a5b3421bdd3d07c9d4.vis" }}
+,{ "pid":12345, "tid":6, "ts":1666836065210255, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065210264, "dur":1931, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/150dadd0ea9af0a5b3421bdd3d07c9d4.vis" }}
+,{ "pid":12345, "tid":6, "ts":1666836065212241, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/150dadd0ea9af0a5b3421bdd3d07c9d4.caw" }}
+,{ "pid":12345, "tid":6, "ts":1666836065212309, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065212322, "dur":933, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/150dadd0ea9af0a5b3421bdd3d07c9d4.caw" }}
+,{ "pid":12345, "tid":6, "ts":1666836065213306, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/0a/0ac2ced4a10459b00f227a6770da987e.iws.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065213359, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065213498, "dur":1590, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/0a/0ac2ced4a10459b00f227a6770da987e.iws.sse" }}
+,{ "pid":12345, "tid":6, "ts":1666836065215134, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/resources.assets" }}
+,{ "pid":12345, "tid":6, "ts":1666836065215186, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666836065215194, "dur":82253, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/resources.assets" }}
+,{ "pid":12345, "tid":6, "ts":1666836065297977, "dur":687395, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065077018, "dur":704, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065077722, "dur":7455, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065085180, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1666836065085271, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065085324, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1666836065085380, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065085423, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1666836065085477, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065085522, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom.exe" }}
+,{ "pid":12345, "tid":7, "ts":1666836065085617, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065085674, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666836065085734, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065085782, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666836065085836, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065085879, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666836065085924, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065085972, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666836065086021, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065086063, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666836065086109, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065086151, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666836065086197, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065086238, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666836065086284, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065086326, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666836065086367, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065086407, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666836065086447, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065086493, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666836065086539, "dur":181, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065086721, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666836065086802, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065086856, "dur":97903, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666836065184760, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065184892, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/c8/c89481d4d50ab42b4ac43b6ad66ac5ec.ecm" }}
+,{ "pid":12345, "tid":7, "ts":1666836065184994, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065185012, "dur":1017, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/c8/c89481d4d50ab42b4ac43b6ad66ac5ec.ecm" }}
+,{ "pid":12345, "tid":7, "ts":1666836065186086, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/b2/b2d80a98bd92090d651ecaecaf177a81.vis" }}
+,{ "pid":12345, "tid":7, "ts":1666836065186146, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065186204, "dur":800, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/b2/b2d80a98bd92090d651ecaecaf177a81.vis" }}
+,{ "pid":12345, "tid":7, "ts":1666836065187050, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/b2/b2d80a98bd92090d651ecaecaf177a81.rgb" }}
+,{ "pid":12345, "tid":7, "ts":1666836065187099, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065187107, "dur":949, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/b2/b2d80a98bd92090d651ecaecaf177a81.rgb" }}
+,{ "pid":12345, "tid":7, "ts":1666836065188112, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/b2/b2d80a98bd92090d651ecaecaf177a81.iws.sse" }}
+,{ "pid":12345, "tid":7, "ts":1666836065188177, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065188187, "dur":947, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/b2/b2d80a98bd92090d651ecaecaf177a81.iws.sse" }}
+,{ "pid":12345, "tid":7, "ts":1666836065189187, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/b2/b2d80a98bd92090d651ecaecaf177a81.caw" }}
+,{ "pid":12345, "tid":7, "ts":1666836065189247, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065189260, "dur":869, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/b2/b2d80a98bd92090d651ecaecaf177a81.caw" }}
+,{ "pid":12345, "tid":7, "ts":1666836065190177, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a0a71308f0d8a80b6bd49d4b521c230a.rgb" }}
+,{ "pid":12345, "tid":7, "ts":1666836065190245, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065190254, "dur":1027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a0a71308f0d8a80b6bd49d4b521c230a.rgb" }}
+,{ "pid":12345, "tid":7, "ts":1666836065191343, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a0a71308f0d8a80b6bd49d4b521c230a.iws.sse" }}
+,{ "pid":12345, "tid":7, "ts":1666836065191413, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065191424, "dur":1138, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a0a71308f0d8a80b6bd49d4b521c230a.iws.sse" }}
+,{ "pid":12345, "tid":7, "ts":1666836065192618, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a09b58fcdb796fb4e8582266e1e34891.vis" }}
+,{ "pid":12345, "tid":7, "ts":1666836065192679, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065192716, "dur":1162, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a09b58fcdb796fb4e8582266e1e34891.vis" }}
+,{ "pid":12345, "tid":7, "ts":1666836065193936, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a09b58fcdb796fb4e8582266e1e34891.iws.sse" }}
+,{ "pid":12345, "tid":7, "ts":1666836065194016, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065194029, "dur":1021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/a0/a09b58fcdb796fb4e8582266e1e34891.iws.sse" }}
+,{ "pid":12345, "tid":7, "ts":1666836065195097, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/4b/4b7700eee6e1e84dc53b14c54a63e33a.rsc.sse" }}
+,{ "pid":12345, "tid":7, "ts":1666836065195151, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065195218, "dur":1664, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/4b/4b7700eee6e1e84dc53b14c54a63e33a.rsc.sse" }}
+,{ "pid":12345, "tid":7, "ts":1666836065196932, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/43/4386e2c78e6e3179d9c15d5c6638bb3c.vis" }}
+,{ "pid":12345, "tid":7, "ts":1666836065196991, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065197043, "dur":859, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/43/4386e2c78e6e3179d9c15d5c6638bb3c.vis" }}
+,{ "pid":12345, "tid":7, "ts":1666836065197960, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/43/4386e2c78e6e3179d9c15d5c6638bb3c.ecm" }}
+,{ "pid":12345, "tid":7, "ts":1666836065198014, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065198023, "dur":951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/43/4386e2c78e6e3179d9c15d5c6638bb3c.ecm" }}
+,{ "pid":12345, "tid":7, "ts":1666836065199028, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/43/4386e2c78e6e3179d9c15d5c6638bb3c.caw" }}
+,{ "pid":12345, "tid":7, "ts":1666836065199088, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065199100, "dur":4965, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/43/4386e2c78e6e3179d9c15d5c6638bb3c.caw" }}
+,{ "pid":12345, "tid":7, "ts":1666836065204111, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/2b/2b8563d644d365c3fb11b05527a96c1a.iws.sse" }}
+,{ "pid":12345, "tid":7, "ts":1666836065204251, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065204262, "dur":1458, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/2b/2b8563d644d365c3fb11b05527a96c1a.iws.sse" }}
+,{ "pid":12345, "tid":7, "ts":1666836065205771, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/1f/1f712f4ca1023df697a32180de8bf209.rsc.sse" }}
+,{ "pid":12345, "tid":7, "ts":1666836065205830, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065205839, "dur":1434, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/1f/1f712f4ca1023df697a32180de8bf209.rsc.sse" }}
+,{ "pid":12345, "tid":7, "ts":1666836065207330, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/1f/1f712f4ca1023df697a32180de8bf209.caw" }}
+,{ "pid":12345, "tid":7, "ts":1666836065207392, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065207403, "dur":1027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/1f/1f712f4ca1023df697a32180de8bf209.caw" }}
+,{ "pid":12345, "tid":7, "ts":1666836065208483, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/15d9a02166399f9fbdb62e2d5c059e09.rgb" }}
+,{ "pid":12345, "tid":7, "ts":1666836065208536, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065208545, "dur":1083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/15d9a02166399f9fbdb62e2d5c059e09.rgb" }}
+,{ "pid":12345, "tid":7, "ts":1666836065209683, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/15d9a02166399f9fbdb62e2d5c059e09.ecm" }}
+,{ "pid":12345, "tid":7, "ts":1666836065209741, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065209754, "dur":1004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/15d9a02166399f9fbdb62e2d5c059e09.ecm" }}
+,{ "pid":12345, "tid":7, "ts":1666836065210810, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/150dadd0ea9af0a5b3421bdd3d07c9d4.rsc.sse" }}
+,{ "pid":12345, "tid":7, "ts":1666836065210874, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065210887, "dur":1363, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/150dadd0ea9af0a5b3421bdd3d07c9d4.rsc.sse" }}
+,{ "pid":12345, "tid":7, "ts":1666836065212294, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/0a/0ac2ced4a10459b00f227a6770da987e.vis" }}
+,{ "pid":12345, "tid":7, "ts":1666836065212357, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065212410, "dur":942, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/0a/0ac2ced4a10459b00f227a6770da987e.vis" }}
+,{ "pid":12345, "tid":7, "ts":1666836065213402, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/0a/0ac2ced4a10459b00f227a6770da987e.ecm" }}
+,{ "pid":12345, "tid":7, "ts":1666836065213483, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065213493, "dur":1145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/0a/0ac2ced4a10459b00f227a6770da987e.ecm" }}
+,{ "pid":12345, "tid":7, "ts":1666836065214691, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":7, "ts":1666836065214748, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065214757, "dur":82805, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":7, "ts":1666836065297620, "dur":159, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/boot.config" }}
+,{ "pid":12345, "tid":7, "ts":1666836065297780, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666836065297831, "dur":687560, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065077059, "dur":672, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065077731, "dur":7430, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065085164, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1666836065085265, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065085331, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1666836065085393, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065085447, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":8, "ts":1666836065085509, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065085562, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666836065085720, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065085771, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666836065085822, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065085865, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666836065085923, "dur":459, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065086383, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666836065086430, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065086473, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666836065086521, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065086565, "dur":416, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666836065086981, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065087051, "dur":45109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666836065132161, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065132221, "dur":79943, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666836065212165, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065212222, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/150dadd0ea9af0a5b3421bdd3d07c9d4.ecm" }}
+,{ "pid":12345, "tid":8, "ts":1666836065212308, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065212329, "dur":1178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/15/150dadd0ea9af0a5b3421bdd3d07c9d4.ecm" }}
+,{ "pid":12345, "tid":8, "ts":1666836065213565, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/0a/0ac2ced4a10459b00f227a6770da987e.caw" }}
+,{ "pid":12345, "tid":8, "ts":1666836065213631, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065213643, "dur":1281, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/GI/level0/0a/0ac2ced4a10459b00f227a6770da987e.caw" }}
+,{ "pid":12345, "tid":8, "ts":1666836065214979, "dur":862, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":8, "ts":1666836065215842, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065215905, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/dhdyd/Desktop//Test_Backroom_Data/level0.resS" }}
+,{ "pid":12345, "tid":8, "ts":1666836065215963, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666836065215970, "dur":81286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/dhdyd/Desktop//Test_Backroom_Data/level0.resS" }}
+,{ "pid":12345, "tid":8, "ts":1666836065298436, "dur":686968, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666836065990940, "dur":3377, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1666836066025405, "dur": 965, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666836066025199, "dur": 1196, "ph": "X", "name": "Write chrome-trace events", "args": {} },
