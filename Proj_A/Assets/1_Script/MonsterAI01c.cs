@@ -62,6 +62,7 @@ public class MonsterAI01c : MonoBehaviour
         
         if (objTarget != null)
         {
+            i_coliders = Random.Range(0, (objWayPoints.Count)+1);
             objA = objWayPoints[i_coliders];
             if (isMove == false)
             {
@@ -212,12 +213,13 @@ public class MonsterAI01c : MonoBehaviour
     }
 
 
+
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(this.transform.position, Site);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Player")
             objTarget = collision.gameObject;

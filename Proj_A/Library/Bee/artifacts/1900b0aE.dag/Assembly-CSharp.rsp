@@ -353,6 +353,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/1_Script/MainCameraCtrl.cs"
+"Assets/1_Script/MonsterAI00.cs"
 "Assets/1_Script/MonsterAI01.cs"
 "Assets/1_Script/MonsterAI01c.cs"
 "Assets/1_Script/PlayerCtrl.cs"
