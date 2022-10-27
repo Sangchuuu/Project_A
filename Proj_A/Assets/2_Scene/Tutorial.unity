@@ -237,7 +237,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2544022
 Transform:
   m_ObjectHideFlags: 0
@@ -3331,9 +3331,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c88de5c4be1258a4c87c049389e395c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TargetObjects: []
   TargetObject: {fileID: 0}
-  ReturnPoint: {fileID: 0}
-  ismove: 0
+  ReturnPoint: {fileID: 809931745}
+  agent: {fileID: 263942145}
+  speed: 0
+  ismove: 1
+  site: 5
   Istate: 0
 --- !u!195 &263942145
 NavMeshAgent:
@@ -3345,7 +3349,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5000038
-  m_Speed: 4
+  m_Speed: 7
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -3428,7 +3432,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263942143}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.86, y: 0.49, z: 15.39}
+  m_LocalPosition: {x: -33.64, y: 0.49, z: 6.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

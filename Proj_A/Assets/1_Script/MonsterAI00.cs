@@ -5,19 +5,25 @@ using UnityEngine.AI;
 
 public class MonsterAI00 : MonoBehaviour
 {
-
+    [SerializeField]
     List<GameObject> TargetObjects = new List<GameObject>();
 
     [SerializeField]
     private GameObject TargetObject;
+    
+    [SerializeField]
     private GameObject ReturnPoint;
 
     [SerializeField]
     NavMeshAgent agent;
+
+    [SerializeField]
     private float speed;
 
     [SerializeField]
     private bool ismove;
+
+    [SerializeField]
     private float site;
     
 
@@ -27,13 +33,15 @@ public class MonsterAI00 : MonoBehaviour
 
     private void Start()
     {
-       
+        UpdateTargetSphere();
+        SetState(Istate);
     }
 
 
     private void Update()
     {
-       
+        MovingLogic();
+        UpdateState();
     }
 
 
@@ -47,17 +55,31 @@ public class MonsterAI00 : MonoBehaviour
         speed = agent.speed;
 
         Vector3 TargetPos = TargetObject.transform.position;
+        TargetPos.y = 0;
         Vector3 vPos = this.gameObject.transform.position;
+        vPos.y = 0;
         float fDist = (TargetPos - vPos).magnitude;
         
 
-        if(fDist > speed * Time.deltaTime)
+        if(fDist < speed)
         {
             ismove = true;
             agent.SetDestination(TargetObject.transform.position);
         }
+        else
+        {
+            TargetObjects.Clear();
+            ismove = false;
+        }
 
     }
+
+    void TargetSelect()
+    {
+
+    }
+
+
 
     void SetState(m_state status)
     {
@@ -87,7 +109,7 @@ public class MonsterAI00 : MonoBehaviour
             case m_state.IDLE:
                 break;
             case m_state.TRACKING:
-                if(TargetObject == null)
+                if(!TargetObject)
                 {
                     SetState(m_state.RETURN);
                 }
@@ -97,6 +119,14 @@ public class MonsterAI00 : MonoBehaviour
         }
 
 
+    }
+
+
+
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(this.transform.position, site);
     }
 
 
