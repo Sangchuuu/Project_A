@@ -11,6 +11,10 @@ public class MonsterAi : MonoBehaviour
     [SerializeField]
     private float m_fSight;
 
+    [SerializeField]
+    private Vector3 m_vRayPoint;
+    [SerializeField]
+    private Vector3 m_vDir;
 
     [SerializeField]
     private GameObject m_objTarget;
@@ -25,22 +29,39 @@ public class MonsterAi : MonoBehaviour
     private bool m_bIsTargetInRoom = false;
     
     [SerializeField]
-    private enum e_Mon_Ai_State { Walk, Find, Chase, Skill } // 배회, 탐색, 추격, 특수
+    private enum e_Mon_Ai_State { Idle, Walk, Find, Chase, Skill } // 배회, 탐색, 추격, 특수
 
     [SerializeField]
-    e_Mon_Ai_State m_Mon_Ai_State;
+    e_Mon_Ai_State m_Mon_Ai_State = e_Mon_Ai_State.Idle;
     
     public GameObject ObjWayPoint { get => m_objWayPoint; set => m_objWayPoint = value; }
     public bool IsArrived { get => m_bIsArrived; set => m_bIsArrived = true; }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.SetActive(true);
+        }
+    }
+
     public void SetMonsterAi()
     {
-        if (m_objTarget != null)
-        {
-            if (CheckDist(m_objTarget) > 9.0f)
-                m_Mon_Ai_State = e_Mon_Ai_State.Chase;
-        }
-        else
+        //RaycastHit hit;
+        
+        //if(Physics.Raycast(m_vRayPoint, m_objTarget.transform.position, out hit, 1000f))
+        //{ 
+        //    if (hit.collider.CompareTag("Player"))
+        //    {
+        //        Debug.Log("레이");
+        //        Debug.Log(hit.collider.name);
+        //        if (CheckDist(m_objTarget) < 9.0f)
+        //            m_Mon_Ai_State = e_Mon_Ai_State.Chase;
+        //        else
+        //            m_Mon_Ai_State = e_Mon_Ai_State.Idle;
+        //    }
+        //}
+        if (m_objWayPoint != null)
         {
             if (m_bIsTargetInRoom == true)
                 m_Mon_Ai_State = e_Mon_Ai_State.Find;
@@ -48,7 +69,11 @@ public class MonsterAi : MonoBehaviour
             if (CheckDist(m_objWayPoint) > 0.5f)
                 m_Mon_Ai_State = e_Mon_Ai_State.Walk;
         }
-       
+        else
+            m_Mon_Ai_State = e_Mon_Ai_State.Idle;
+   
+
+
         MonsterAiState(m_Mon_Ai_State);
     }
     
@@ -56,6 +81,10 @@ public class MonsterAi : MonoBehaviour
     {
         switch (state)
         {
+            case e_Mon_Ai_State.Idle:
+                
+                break;
+
             case e_Mon_Ai_State.Walk:
                 this.transform.LookAt(m_objWayPoint.transform.position); // 추후 수정
                 this.transform.position += transform.forward * m_fSpeed * Time.deltaTime;
@@ -66,51 +95,44 @@ public class MonsterAi : MonoBehaviour
                 break;
 
             case e_Mon_Ai_State.Chase:
-
+                Rotation(m_objTarget);
+                this.transform.position += transform.forward * m_fSpeed * Time.deltaTime;
+                
                 break;
 
             case e_Mon_Ai_State.Skill:
                 break;
-
         }
+    }
 
+    public void Rotation(GameObject objTarget)
+    {
+
+        Vector3 vDir = (objTarget.transform.position - this.transform.position).normalized;
+        m_vDir = vDir;
+        this.transform.rotation = Quaternion.LookRotation(vDir);
     }
 
     private void Detect()
     {
-
     }
 
     private float CheckDist(GameObject gameObject)
     {
         float fDist = (this.transform.position - gameObject.transform.position).magnitude;
+        Debug.Log(fDist);
         return fDist;
     }
-    // Start is called before the first frame update
+
     void Start()
     {
-        List<GameObject> objWayPoints = new List<GameObject>();
-        float fdist = 0;
-        Collider[] colliders = Physics.OverlapSphere(this.transform.position, 10f);
-        for(int i = 0; i < colliders.Length; i++)
-        {
-            if (colliders[i].CompareTag("WayPoint"))
-                objWayPoints.Add(colliders[i].gameObject);
-        }
-        for(int i = 0; i < objWayPoints.Count; i++)
-        {
-            float dist = (this.transform.position - objWayPoints[i].transform.position).magnitude;
-            if(fdist < dist)
-            {
-                fdist = dist;
-                m_objWayPoint = objWayPoints[i];
-            }
-        }
+        m_objTarget = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
+
         SetMonsterAi();
     }
 }
