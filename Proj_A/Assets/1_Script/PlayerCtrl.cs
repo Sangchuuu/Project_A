@@ -412,7 +412,7 @@ public class PlayerCtrl : MonoBehaviour
             {
                 Transform objectHit = hit.transform;
 
-                GameObject gameObject;
+                //GameObject gameObject;
 
                 Debug.Log(objectHit.name);
                 objectname = objectHit.name;

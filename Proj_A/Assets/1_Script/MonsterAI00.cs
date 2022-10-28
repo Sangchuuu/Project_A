@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using static UnityEditor.PlayerSettings;
+using static UnityEngine.GraphicsBuffer;
 
 public class MonsterAI00 : MonoBehaviour
 {
@@ -10,7 +12,7 @@ public class MonsterAI00 : MonoBehaviour
 
     [SerializeField]
     private GameObject TargetObject;
-    
+
     [SerializeField]
     private GameObject ReturnPoint;
 
@@ -25,11 +27,26 @@ public class MonsterAI00 : MonoBehaviour
 
     [SerializeField]
     private float site;
-    
 
-    public enum m_state {IDLE, TRACKING, RETURN};
+    /*[SerializeField]
+    float ViewAngle = 0f;
+
+    [SerializeField]
+    LayerMask TargetMask;
+
+    [SerializeField]
+    LayerMask ObstacleMask;*/
+
+
+
+    public enum m_state { IDLE, TRACKING, RETURN };
 
     public m_state Istate;
+
+    private void Awake()
+    {
+        agent = GetComponent<NavMeshAgent>();  
+    }
 
     private void Start()
     {
@@ -59,9 +76,9 @@ public class MonsterAI00 : MonoBehaviour
         Vector3 vPos = this.gameObject.transform.position;
         vPos.y = 0;
         float fDist = (TargetPos - vPos).magnitude;
-        
 
-        if(fDist < speed)
+
+        if (fDist < speed * Time.deltaTime)
         {
             ismove = true;
             agent.SetDestination(TargetObject.transform.position);
@@ -83,18 +100,22 @@ public class MonsterAI00 : MonoBehaviour
 
     void SetState(m_state status)
     {
-        switch (status) 
-        { 
+        switch (status)
+        {
             case m_state.IDLE:
                 break;
 
             case m_state.TRACKING:
+                if (TargetObject.CompareTag("Player"))
+                {
+                    site = 15f;
+                }
                 break;
 
             case m_state.RETURN:
                 TargetObject = ReturnPoint;
                 break;
-               
+
         }
 
         Istate = status;
@@ -109,7 +130,7 @@ public class MonsterAI00 : MonoBehaviour
             case m_state.IDLE:
                 break;
             case m_state.TRACKING:
-                if(!TargetObject)
+                if (!TargetObject)
                 {
                     SetState(m_state.RETURN);
                 }
@@ -130,34 +151,34 @@ public class MonsterAI00 : MonoBehaviour
     }
 
 
+    /*Vector3 AngleToDir(float angle)
+    {
+        float radian = angle * Mathf.Deg2Rad;
+        return new Vector3(Mathf.Sin(radian), 0f, Mathf.Cos(radian));
+    }*/
+
+
     void UpdateTargetSphere() // 구형 모양의 오버랩을 이용하여 감지
     {
-        float fdist = 0;
+        //float fdist = 0;
 
         Collider[] colliders = Physics.OverlapSphere(this.transform.position, site);
 
-        for(int i = 0; i < colliders.Length; i++) // 콜라이더 감지된 것을 배열에 추가
+        for (int i = 0; i < colliders.Length; i++) // 콜라이더 감지된 것을 배열에 추가
         {
-            if (colliders[i].CompareTag ("Player"))
+            if (colliders[i].CompareTag("Player"))
             {
-                TargetObjects.Add(colliders[i].gameObject);
+                TargetObjects.Add(colliders[i].gameObject);               
                 Debug.Log("TargetObject: " + colliders[i].gameObject);
             }
-           
-        }
-        for(int i = 0; i<TargetObjects.Count; i++) // 콜라이더를 저장한 배열만큼 반복
-        {
-            float dist = (this.gameObject.transform.position - colliders[i].transform.position).magnitude; // 자신하고 타겟의 게임오브젝트를 뺀 벡터 값의 크기를 거리의 값으로 설정
-
-            if(fdist < dist)
-            {
-                fdist = dist;
-                TargetObject = colliders[i].gameObject;
-            }
-
+            
         }
 
-
+        TargetObject = colliders[0].gameObject;
+        
     }
 
+
 }
+
+

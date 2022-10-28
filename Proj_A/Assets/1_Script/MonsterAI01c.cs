@@ -62,7 +62,7 @@ public class MonsterAI01c : MonoBehaviour
         
         if (objTarget != null)
         {
-            i_coliders = Random.Range(0, (objWayPoints.Count)+1);
+            i_coliders = Random.Range(0, (objWayPoints.Count));
             objA = objWayPoints[i_coliders];
             if (isMove == false)
             {
