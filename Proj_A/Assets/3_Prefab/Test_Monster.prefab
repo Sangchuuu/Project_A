@@ -113,7 +113,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &6638740638834220240
 MonoBehaviour:
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_fSpeed: 2
   m_fDetectDist: 0
   m_fSight: 0
-  m_objTarget: {fileID: 0}
+  m_objTarget: {fileID: 3883516509258108781, guid: b3d3702481e0878449e9be739122c06f, type: 3}
   m_objWayPoint: {fileID: 0}
   m_objRoom: {fileID: 0}
   m_bIsArrived: 0
