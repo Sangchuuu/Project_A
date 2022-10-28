@@ -37,24 +37,36 @@ public class PlayerController : MonoBehaviour
     public float cameraHsit = 0.4f;
 
     [Header("스태미나 관련")]
+    [Space(5f)]
+    [Header("최대 스태미나")]
     public float maxstamina = 100;
+
+    [Header("동작별 소모 스태미나")]
     public float runstamina = 1;
     public float jumpstamina = 20;
     public float slidingstamina = 20;
+    public float pakurustamina = 20;
     private float nowstamina;
 
+    [Header("스태미나 회복 관련")]
     public float recoverystamina = 10;
     private bool staminarecoveryONOFF = false;
     public float staminarecoverytime = 2f;
     public float staminarecoverytime2 = 4f;
     private float staminarecoverytimeCycle = 0f;
 
+    [Header("스태미나 사라지는 속도 (200/n초)")]
     private float staminaRGBmax = 200;
     public float staminaRGBdis = 100;
     private float nowstaminaRGB = 0;
     RawImage staminaRGB;
 
+    [Header("(E키 및 마우스 클릭)의 동작 허용 길이")]
+    public float PlayerRaycastL = 5f;
+
     [Space(15f)]
+
+
 
     public GameObject staminabar1;
     public GameObject staminabar2;
@@ -95,6 +107,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        //Debug.Log("플레이어 상태 : "+playermovestate);
         PlayerRayCast();
         StaminaBarController(nowstamina, maxstamina);
 
@@ -160,7 +173,7 @@ public class PlayerController : MonoBehaviour
 
         if (jumpstate == false)
         {
-            if (playermovestate == 1 || playermovestate == 2 || playermovestate == 3)
+            if (playermovestate == 1 || playermovestate == 2 || playermovestate == 3 || playermovestate == 6)
             {
                 if (Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(1))
                 {
@@ -179,7 +192,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (playermovestate == 1)
+        if (playermovestate == 1 || playermovestate == 6)
         {
             PlayerWalk();
         }
@@ -204,7 +217,7 @@ public class PlayerController : MonoBehaviour
 
         if (jumpstate == false)
         {
-            if (playermovestate == 1 || playermovestate == 2)
+            if (playermovestate == 1 || playermovestate == 2 || playermovestate == 6)
             {
                 if (Input.GetKeyDown(KeyCode.LeftShift))//달리기로 상태전환
                 {
@@ -232,7 +245,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.LeftControl))//앉기 상태 전환
             {
-                if (playermovestate == 1)
+                if (playermovestate == 1 || playermovestate == 6)
                 {
                     playermovestate = 3;
                 }
@@ -319,11 +332,16 @@ public class PlayerController : MonoBehaviour
 
     public void PlayerRotate()
     {
-        yRotateMove = Input.GetAxis("Mouse X") * Time.deltaTime * rotateSpeed;
+        //yRotateMove = Input.GetAxis("Mouse X") * Time.deltaTime * rotateSpeed;
 
-        yRotate = transform.eulerAngles.y + yRotateMove;
+        //yRotate = transform.eulerAngles.y + yRotateMove;
 
-        transform.eulerAngles = new Vector3(transform.eulerAngles.x, yRotate, 0);
+        //transform.eulerAngles = new Vector3(transform.eulerAngles.x, yRotate, 0);
+
+        Vector3 aa = vcamera.transform.eulerAngles;
+        aa.z = 0;
+        aa.x = 0;
+        transform.eulerAngles = aa;
     }
 
     public void Playerjump()
@@ -404,11 +422,12 @@ public class PlayerController : MonoBehaviour
     public void PlayerRayCast()
     {
         RaycastHit hit;
-        if (Input.GetKeyDown(KeyCode.E)||Input.GetMouseButton(0))
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
         {
             string objectname = null;
+            string objecttag = null;
 
-            if (Physics.Raycast(vcamera.transform.position, vcamera.transform.forward, out hit, 5.0f))
+            if (Physics.Raycast(vcamera.transform.position, vcamera.transform.forward, out hit, PlayerRaycastL))
             {
                 Transform objectHit = hit.transform;
 
@@ -416,8 +435,9 @@ public class PlayerController : MonoBehaviour
 
                 Debug.Log(objectHit.name);
                 objectname = objectHit.name;
+                objecttag = objectHit.tag;
 
-                if (objectname == "door")
+                if (objecttag == "Door")
                 {
                     gameObject = hit.transform.gameObject;
                     gameObject.GetComponent<Door>().ChangeDoorState();
@@ -431,6 +451,15 @@ public class PlayerController : MonoBehaviour
 
                 }
 
+
+
+                //if (objecttag == "Item")
+                //{
+                //    gameObject = hit.transform.gameObject;
+                //    gameObject.GetComponent<Item1>().Item1drop();
+                //}
+
+
             }
             else
             {
@@ -440,6 +469,52 @@ public class PlayerController : MonoBehaviour
 
         }
 
+    }
+
+    public void pakuruOn()
+    {
+        playermovestate = 6;
+    }
+    public void pakuru2On()
+    {
+        playermovestate = 7;
+    }
+    public void pakuruOff()
+    {
+        playermovestate = 1;
+    }
+
+    public void GravityOff()
+    {
+        GetComponent<Rigidbody>().useGravity = false;
+        GetComponent<CapsuleCollider>().isTrigger = true;
+    }
+    public void GravityOn()
+    {
+        GetComponent<Rigidbody>().useGravity = true;
+        GetComponent<CapsuleCollider>().isTrigger = false;
+    }
+
+    public bool pakuruStamina()
+    {
+        bool aa = false;
+        if (nowstamina > 0)
+        {
+            staminarecoveryONOFF = false;
+            staminarecoverytimeCycle = 0;
+            aa = true;
+            nowstamina -= jumpstamina;
+            if (nowstamina < 0)
+            {
+                nowstamina = 0;
+            }
+        }
+        else
+        {
+            aa = false;
+        }
+
+        return aa;
     }
 
 }

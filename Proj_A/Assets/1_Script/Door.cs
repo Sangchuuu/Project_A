@@ -24,12 +24,12 @@ public class Door : MonoBehaviour
     {
         if (open)
         {
-            Quaternion targetRotation = Quaternion.Euler(-90, doorOpenAngle, 0);
+            Quaternion targetRotation = Quaternion.Euler(0, doorOpenAngle, 0);
             transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotation, smoot * Time.deltaTime);
         }
         else
         {
-            Quaternion targetRotation2 = Quaternion.Euler(-90, doorCloseAngle, 0);
+            Quaternion targetRotation2 = Quaternion.Euler(0, doorCloseAngle, 0);
             transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotation2, smoot * Time.deltaTime);
         }
     }
