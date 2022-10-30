@@ -799,7 +799,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &25063554
 PrefabInstance:
@@ -1701,7 +1703,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &48555704
 PrefabInstance:
@@ -2499,7 +2503,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &81387244
 PrefabInstance:
@@ -3081,7 +3087,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &102085937
 PrefabInstance:
@@ -5573,7 +5581,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!4 &191899652 stripped
 Transform:
@@ -8609,7 +8619,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1 &303100230
 GameObject:
@@ -8689,8 +8701,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303100230}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 25, y: 1.4, z: 30}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 50, y: 0.85, z: 60}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9286,7 +9298,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!4 &333975776 stripped
 Transform:
@@ -9404,7 +9418,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &344273893
 PrefabInstance:
@@ -10425,7 +10441,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!4 &383642111 stripped
 Transform:
@@ -10753,7 +10771,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1 &408276572
 GameObject:
@@ -11779,7 +11799,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1 &441815340
 GameObject:
@@ -13211,7 +13233,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!4 &492829553 stripped
 Transform:
@@ -13625,7 +13649,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &522972102
 PrefabInstance:
@@ -16878,7 +16904,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!4 &652149436 stripped
 Transform:
@@ -18042,7 +18070,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1 &703993707
 GameObject:
@@ -18134,7 +18164,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &717453801
 PrefabInstance:
@@ -19207,7 +19239,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &748251088
 PrefabInstance:
@@ -20702,7 +20736,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &801993926
 PrefabInstance:
@@ -20987,7 +21023,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!4 &813453239 stripped
 Transform:
@@ -23100,7 +23138,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!4 &891587736 stripped
 Transform:
@@ -23218,7 +23258,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1 &896407074
 GameObject:
@@ -23607,7 +23649,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &908901942
 PrefabInstance:
@@ -28349,7 +28393,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &1065301427
 PrefabInstance:
@@ -30248,7 +30294,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &1142499381
 PrefabInstance:
@@ -31931,7 +31979,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1 &1205443676
 GameObject:
@@ -32797,7 +32847,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &1247457150
 PrefabInstance:
@@ -33398,7 +33450,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &1280935522
 PrefabInstance:
@@ -34548,7 +34602,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &1336243861
 PrefabInstance:
@@ -34718,7 +34774,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &1342061513
 PrefabInstance:
@@ -38122,7 +38180,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &1466754710
 PrefabInstance:
@@ -38946,7 +39006,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1496437802}
   m_Layer: 0
-  m_Name: "Basic Menu (GM, UI  \uB4F1)"
+  m_Name: "Basic Menu (GM, UI \uB4F1)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39333,7 +39393,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!4 &1513018942 stripped
 Transform:
@@ -39518,7 +39580,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &1533726471
 PrefabInstance:
@@ -40390,7 +40454,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &1562358730
 PrefabInstance:
@@ -43187,7 +43253,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &1669984904
 PrefabInstance:
@@ -43678,7 +43746,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1687973171}
   m_Layer: 0
-  m_Name: "Basic Object (\uAD11\uC6D0, \uC774\uBCA4\uD2B8 \uB4F1)"
+  m_Name: "Basic Object (\uCE74\uBA54\uB77C, \uAD11\uC6D0 \uB4F1)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44329,7 +44397,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!4 &1722340797 stripped
 Transform:
@@ -45266,7 +45336,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!4 &1784804298 stripped
 Transform:
@@ -45532,7 +45604,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &1799773309
 PrefabInstance:
@@ -49318,7 +49392,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!4 &1978742348 stripped
 Transform:
@@ -50140,7 +50216,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &2006010881
 PrefabInstance:
@@ -50580,7 +50658,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!4 &2018634216 stripped
 Transform:
@@ -53155,7 +53235,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listWayPoints: []
+  m_objPlayer: {fileID: 0}
   m_nRandNum: 0
+  m_bIsPlayerArrived: 0
   m_fDetectLength: 0
 --- !u!1001 &2114671176
 PrefabInstance:

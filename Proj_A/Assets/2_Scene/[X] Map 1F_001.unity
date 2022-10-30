@@ -27334,7 +27334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1496437802}
   m_Layer: 0
-  m_Name: "Basic Menu (GM, UI  \uB4F1)"
+  m_Name: "Basic Menu (GM, UI \uB4F1)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30584,7 +30584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1687973171}
   m_Layer: 0
-  m_Name: "Basic Object (\uAD11\uC6D0, \uC774\uBCA4\uD2B8 \uB4F1)"
+  m_Name: "Basic Object (\uCE74\uBA54\uB77C, \uAD11\uC6D0 \uB4F1)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
