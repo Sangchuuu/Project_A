@@ -16,36 +16,35 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private int curSpawnMonster; // 현재 스폰된 몬스터    
     [SerializeField]
-    GameObject InventoryRayout;
+    public GameObject InventoryRayout;
 
-    bool inventoryopen;
+    [SerializeField]
+    private bool inventoryopen;
 
-    private static GameManager instance;
+    public static GameManager instance;
 
-    public static GameManager GetInstance()
-    {
-        if(instance == null)
-        {
-            instance = FindObjectOfType(typeof(GameManager)) as GameManager;
-            Debug.Log("no singleton obj");
-        }
-        return instance;
-        
-    }
-
+    //public static GameManager GetInstance()
+    //{
+    //    if(instance == null)
+    //    {            
+    //        Debug.Log("no singleton obj");
+    //    }
+    //    return instance;       
+    //}
     private void Awake()
     {
         if (instance == null)
-        {
+        {           
             instance = this;
+            DontDestroyOnLoad(instance);
         }
         // 인스턴스가 존재하는 경우 새로생기는 인스턴스를 삭제한다.
-        else if (instance != this)
+        else
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
         // 아래의 함수를 사용하여 씬이 전환되더라도 선언되었던 인스턴스가 파괴되지 않는다.
-        DontDestroyOnLoad(gameObject);
+        
     }
 
 
@@ -64,7 +63,18 @@ public class GameManager : MonoBehaviour
             StartCoroutine(SpawnEnemy());
         }
 
-        //DontDestroyOnLoad(instance);
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            if(inventoryopen == true)
+            {
+                inventoryopen = false;
+            }
+            else if (inventoryopen == false)
+            {
+                inventoryopen = true;
+            }
+            OpenInventoryUI(inventoryopen);
+        }
     } 
 
     IEnumerator SpawnEnemy()
@@ -83,7 +93,16 @@ public class GameManager : MonoBehaviour
     
     public void OpenInventoryUI(bool open)
     {
-        InventoryRayout.gameObject.SetActive(open);    
+        if(open == true)
+        {                      
+            InventoryRayout.gameObject.SetActive(open);
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1f;              
+            InventoryRayout.gameObject.SetActive(open);
+        }       
     }
 
 }

@@ -61,11 +61,7 @@ public class User : MonoBehaviour
             moveSpeed = walkSpeed;
 
         }
-
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            GameManager.GetInstance().OpenInventoryUI(isopeninven);
-        }
+       
 
         Camera.main.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + cameraH, this.transform.position.z);
 
