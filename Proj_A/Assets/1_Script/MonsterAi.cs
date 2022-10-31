@@ -120,7 +120,7 @@ public class MonsterAi : MonoBehaviour
     private float CheckDist(GameObject gameObject)
     {
         float fDist = (this.transform.position - gameObject.transform.position).magnitude;
-        Debug.Log(fDist);
+        //Debug.Log(fDist);
         return fDist;
     }
 

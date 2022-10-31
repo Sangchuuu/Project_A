@@ -14,10 +14,16 @@ public class GameManager : MonoBehaviour
     private int maxSpawnMonster;
     [SerializeField]
     private int curSpawnMonster;
+    [SerializeField]
+    private Transform[] bigZones;
+    [SerializeField]
+    private GameObject[] bigRooms;
+    List<Transform> bigList = new List<Transform>();
 
     void Start()
     {
-        
+        bigList.AddRange(bigZones);
+        BigRoomSpawn();
     }
 
     // Update is called once per frame
@@ -42,6 +48,16 @@ public class GameManager : MonoBehaviour
         curSpawnMonster++;
 
         yield return null;
+    }
+
+    void BigRoomSpawn()
+    {
+        for(int i = 0; i < 3; i++)
+        {
+            int rand = Random.Range(0, bigList.Count);
+            print(bigList[rand]);
+            bigList.RemoveAt(rand);
+        }
     }
     
 
