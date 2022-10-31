@@ -12,6 +12,7 @@ public class Item : ScriptableObject // 게임 오브젝트에 붙일 필요 없고, 그 자체�
     public Sprite itemImage;
     public GameObject itemPrefab;
     public string iteminfo;
+    //public int itemuse;
 
     // Start is called before the first frame update
     void Start()
