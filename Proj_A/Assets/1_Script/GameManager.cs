@@ -22,7 +22,8 @@ public class GameManager : MonoBehaviour
     List<GameObject> bigRoomList = new List<GameObject>();
 
 
-    private static GameManager _instance;
+    //private static GameManager _instance;
+    /*
     public static GameManager Instance
     {
         get
@@ -50,6 +51,7 @@ public class GameManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
     }
+    */
 
     void Start()
     {
