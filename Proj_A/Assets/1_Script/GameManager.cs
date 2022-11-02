@@ -19,10 +19,12 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject[] bigRooms;
     List<Transform> bigList = new List<Transform>();
+    List<GameObject> bigRoomList = new List<GameObject>();
 
     void Start()
     {
         bigList.AddRange(bigZones);
+        bigRoomList.AddRange(bigRooms);
         BigRoomSpawn();
     }
 
@@ -52,12 +54,32 @@ public class GameManager : MonoBehaviour
 
     void BigRoomSpawn()
     {
-        for(int i = 0; i < 3; i++)
+        if(bigList.Count != 0 && bigRoomList.Count != 0)
         {
-            int rand = Random.Range(0, bigList.Count);
-            print(bigList[rand]);
-            bigList.RemoveAt(rand);
-        }
+            for (int i = 0; i < 3; i++)
+            {
+                int ranPoint = Random.Range(0, bigList.Count);
+                print(bigList[ranPoint]);                
+                int ranRoom = Random.Range(0, bigRoomList.Count);
+                print(bigRoomList[ranRoom]);
+                int ranAngle = Random.Range(0, 2);
+                switch (ranAngle)
+                {
+                    case 0:
+                        Instantiate(bigRoomList[ranRoom],
+                            bigList[ranPoint].position,
+                            bigList[ranPoint].rotation);
+                        break;
+                    case 1:
+                        Instantiate(bigRoomList[ranRoom],
+                            bigList[ranPoint].position,
+                            bigList[ranPoint].rotation);
+                        break;
+                }                
+                bigList.RemoveAt(ranPoint);
+                bigRoomList.RemoveAt(ranRoom);
+            }
+        }        
     }
     
 

@@ -3042,6 +3042,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1634953496720489472, guid: 0d8d6ab0ede56d14997d4a1222687bda, type: 3}
   m_PrefabInstance: {fileID: 100368263}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &101406988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3761578507996044923, guid: ee46b7513f1fbb84b80222b6b0f1458e, type: 3}
+  m_PrefabInstance: {fileID: 296993735}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &101892276
 GameObject:
   m_ObjectHideFlags: 0
@@ -13475,6 +13480,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1634953496720489472, guid: 0d8d6ab0ede56d14997d4a1222687bda, type: 3}
   m_PrefabInstance: {fileID: 507541368}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &509225748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3761578507996044923, guid: ee46b7513f1fbb84b80222b6b0f1458e, type: 3}
+  m_PrefabInstance: {fileID: 1268165173}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &513847829
 PrefabInstance:
@@ -44132,6 +44142,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12f1ea418f818bf449060f3816d4e8cb, type: 3}
+--- !u!1 &1701362993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3761578507996044923, guid: ee46b7513f1fbb84b80222b6b0f1458e, type: 3}
+  m_PrefabInstance: {fileID: 227461701}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1703033304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48198,10 +48213,13 @@ MonoBehaviour:
   maxSpawnMonster: 0
   curSpawnMonster: 0
   bigZones:
-  - {fileID: 296993736}
-  - {fileID: 227461702}
-  - {fileID: 1268165174}
-  bigRooms: []
+  - {fileID: 1041849548}
+  - {fileID: 484320612}
+  - {fileID: 1692248810}
+  bigRooms:
+  - {fileID: 101406988}
+  - {fileID: 1701362993}
+  - {fileID: 509225748}
 --- !u!4 &1920679860
 Transform:
   m_ObjectHideFlags: 0
