@@ -48014,8 +48014,8 @@ MonoBehaviour:
   - {fileID: 1692248810}
   bigRooms:
   - {fileID: 3761578507996044923, guid: ee46b7513f1fbb84b80222b6b0f1458e, type: 3}
-  - {fileID: 3761578507996044923, guid: ee46b7513f1fbb84b80222b6b0f1458e, type: 3}
-  - {fileID: 3761578507996044923, guid: ee46b7513f1fbb84b80222b6b0f1458e, type: 3}
+  - {fileID: 3761578507996044923, guid: 6f06666ea3141b04fa256ce8506e1d6a, type: 3}
+  - {fileID: 3761578507996044923, guid: d32a195609709664e9ff50cb5773bed4, type: 3}
 --- !u!4 &1920679860
 Transform:
   m_ObjectHideFlags: 0

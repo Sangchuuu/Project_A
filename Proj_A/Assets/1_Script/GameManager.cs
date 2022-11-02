@@ -21,10 +21,39 @@ public class GameManager : MonoBehaviour
     List<Transform> bigList = new List<Transform>();
     List<GameObject> bigRoomList = new List<GameObject>();
 
+
+    private static GameManager _instance;
+    public static GameManager Instance
+    {
+        get
+        {
+            if (!_instance)
+            {
+                _instance = FindObjectOfType(typeof(GameManager)) as GameManager;
+
+                if (_instance == null)
+                    Debug.Log("no Singleton obj");
+            }
+            return _instance;
+        }
+    }
+
+    private void Awake()
+    {
+        if(_instance == null)
+        {
+            _instance = this;
+        }
+        else if(_instance != null)
+        {
+            Destroy(gameObject);
+        }
+        DontDestroyOnLoad(gameObject);
+    }
+
     void Start()
     {
-        bigList.AddRange(bigZones);
-        bigRoomList.AddRange(bigRooms);
+        RandomList();
         BigRoomSpawn();
     }
 
@@ -52,30 +81,32 @@ public class GameManager : MonoBehaviour
         yield return null;
     }
 
+    void RandomList()
+    {
+        bigList.AddRange(bigZones);
+        bigRoomList.AddRange(bigRooms);
+    }
+
     void BigRoomSpawn()
     {
         if(bigList.Count != 0 && bigRoomList.Count != 0)
         {
             for (int i = 0; i < 3; i++)
             {
-                int ranPoint = Random.Range(0, bigList.Count);
-                print(bigList[ranPoint]);                
+                int ranPoint = Random.Range(0, bigList.Count); 
                 int ranRoom = Random.Range(0, bigRoomList.Count);
-                print(bigRoomList[ranRoom]);
                 int ranAngle = Random.Range(0, 2);
                 switch (ranAngle)
                 {
                     case 0:
-                        Instantiate(bigRoomList[ranRoom],
+                        bigList[ranPoint].Rotate(Vector3.up * 180);
+                        break;
+                    case 1:                        
+                        break;
+                }
+                Instantiate(bigRoomList[ranRoom],
                             bigList[ranPoint].position,
                             bigList[ranPoint].rotation);
-                        break;
-                    case 1:
-                        Instantiate(bigRoomList[ranRoom],
-                            bigList[ranPoint].position,
-                            bigList[ranPoint].rotation);
-                        break;
-                }                
                 bigList.RemoveAt(ranPoint);
                 bigRoomList.RemoveAt(ranRoom);
             }
