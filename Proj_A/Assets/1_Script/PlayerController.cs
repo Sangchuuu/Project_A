@@ -302,7 +302,7 @@ public class PlayerController : MonoBehaviour
         transform.Translate(moveDir.normalized * Time.deltaTime * walkSpeed, Space.Self);
 
         PlayerCollider.center = new Vector3(0, 0.93f, 0);
-        PlayerCollider.height = 1.8f;
+        //PlayerCollider.height = 1.8f;
         cameraH = cameraHstand;
 
     }
