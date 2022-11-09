@@ -32,7 +32,8 @@ public class Slot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //AddItem(item);
+        SetSlotCount(itemcount);
     }
 
     private void SetColor(float _alpha)
@@ -56,6 +57,7 @@ public class Slot : MonoBehaviour
         else
         {
             text_Count.text = "0";
+            text_Count.gameObject.SetActive(false);
             CountImage.SetActive(false);
         }
 
@@ -69,7 +71,9 @@ public class Slot : MonoBehaviour
 
         if (itemcount <= 0)
         {
-            itemimage.color = Color.gray;
+            Color color = itemimage.GetComponent<Image>().color;
+            color.a = 0.1f;
+            itemimage.GetComponent<Image>().color = color;
         }
     }
 

@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour
     private GameObject InventoryBase;
     [SerializeField]
     private GameObject SlotParent;
-
+    [SerializeField]
     private Slot[] slots; // 
 
     // Start is called before the first frame update
@@ -30,22 +30,22 @@ public class Inventory : MonoBehaviour
     {
         if (Item.ItemType.USEAGE == _item.itemtype)
         {
-            for (int i = 0; i < slots.Length; i++)
+            for (int i = 0; i < slots.Length; i++) // 슬롯 길이만큼 반복
             {
                 if (slots[i].item != null)  // null 이라면 slots[i].item.itemName 할 때 런타임 에러 나서
                 {
                     if (slots[i].item.itemName == _item.itemName)
                     {
-                        slots[i].SetSlotCount(_count); // 카운트만큼 배열에 추가
+                        slots[i].SetSlotCount(_count); // 카운트 만큼 아이템 슬롯에 개수 추가
                         return;
                     }
                 }
             }
         }
 
-        for (int i = 0; i < slots.Length; i++)
+        for (int i = 0; i < slots.Length; i++) // 슬롯이 비어 있을 때까지 검사
         {
-            if (slots[i].item == null)
+            if (slots[i].item == null) // 슬롯이 비어있다면
             {
                 slots[i].AddItem(_item, _count); // 카운트만큼 아이템을 배열에 추가
                 return;
