@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     //public Transform objectFrontVector;
     public Camera vcamera;
+    public Animator animator;
 
     public GameObject flashlight;
     private bool flashilightstate = false;
@@ -79,7 +80,7 @@ public class PlayerController : MonoBehaviour
 
     public CapsuleCollider PlayerCollider;
 
-
+    public GameObject camerafoller;
 
     private float yRotate, yRotateMove;
     public float rotateSpeed = 500.0f;
@@ -89,8 +90,13 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody Playerrigidbody;
 
+    private bool walkOn = false;
+    private bool RunOn = false;
+
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         Playerrigidbody = GetComponent<Rigidbody>();
 
         staminaRGB = staminabar1.GetComponent<RawImage>();
@@ -110,6 +116,10 @@ public class PlayerController : MonoBehaviour
         //Debug.Log("플레이어 상태 : "+playermovestate);
         PlayerRayCast();
         StaminaBarController(nowstamina, maxstamina);
+
+        animator.SetBool("pWalk", walkOn);
+        animator.SetBool("pRun", RunOn);
+
 
         if (staminarecoveryONOFF == false)
         {
@@ -196,6 +206,8 @@ public class PlayerController : MonoBehaviour
         {
             PlayerWalk();
         }
+        else
+            walkOn = false;
 
 
         if (jumpstate == false)
@@ -210,7 +222,12 @@ public class PlayerController : MonoBehaviour
         }
 
         if (playermovestate == 2)
+        {
             PlayerRun();
+            RunOn = true;
+        }
+        else
+            RunOn = false;
 
         if (playermovestate == 3)
             PlayerSitDown();
@@ -288,7 +305,8 @@ public class PlayerController : MonoBehaviour
 
     public void Camerafollow()
     {
-        Camera.main.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + cameraH, this.transform.position.z);
+        //Camera.main.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + cameraH, this.transform.position.z);
+        Camera.main.transform.position = camerafoller.transform.position + new Vector3(0,cameraH,0);
     }
 
     public void PlayerWalk()
@@ -300,6 +318,20 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDir = (Vector3.forward * v) + (Vector3.right * h);
 
         transform.Translate(moveDir.normalized * Time.deltaTime * walkSpeed, Space.Self);
+
+
+        
+
+        if (Input.GetAxis("Vertical") != 0)
+        {
+            walkOn = true;         
+        }
+        else
+        {
+            walkOn = false; 
+        }
+
+        animator.SetFloat("pRun", playermovestate);
 
         PlayerCollider.center = new Vector3(0, 0.91f, 0);
         PlayerCollider.height = 1.8f;
@@ -321,6 +353,7 @@ public class PlayerController : MonoBehaviour
             nowstamina -= (runstamina * Time.deltaTime);
             staminarecoveryONOFF = false;
             staminarecoverytimeCycle = 0;
+
 
             if (nowstamina < 0)
             {
@@ -434,23 +467,26 @@ public class PlayerController : MonoBehaviour
                 GameObject gameObject;
 
                 Debug.Log(objectHit.name);
-                objectname = objectHit.name;
-                objecttag = objectHit.tag;
-
-                if (objecttag == "Door")
+                if (objectHit)
                 {
-                    gameObject = hit.transform.gameObject;
-                    gameObject.GetComponent<Door>().ChangeDoorState();
+                    objectname = objectHit.name;
+                    objecttag = objectHit.tag;
 
+
+                    if (objecttag == "Door")
+                    {
+                        gameObject = hit.transform.gameObject;
+                        gameObject.GetComponent<Door>().ChangeDoorState();
+
+                    }
+
+                    if (objectname == "Door_Wood")
+                    {
+                        gameObject = hit.transform.gameObject;
+                        gameObject.GetComponent<BloodyDoor>().ChangeDoorState();
+
+                    }
                 }
-
-                if (objectname == "Door_Wood")
-                {
-                    gameObject = hit.transform.gameObject;
-                    gameObject.GetComponent<BloodyDoor>().ChangeDoorState();
-
-                }
-
 
 
                 //if (objecttag == "Item")
