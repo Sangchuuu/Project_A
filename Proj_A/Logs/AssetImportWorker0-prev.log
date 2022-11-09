@@ -1,0 +1,380 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.8f1 (b30333d56e81) revision 11731763'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'ko' Physical Memory: 15781 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Users\USER\Desktop\Use\Unity\Version\2021.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/USER/Desktop/Use/GitHub/Project_A/Proj_A
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+12961
+Successfully changed project path to: C:/Users/USER/Desktop/Use/GitHub/Project_A/Proj_A
+C:/Users/USER/Desktop/Use/GitHub/Project_A/Proj_A
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 81.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.8f1 (b30333d56e81)
+[Subsystems] Discovering subsystems at path C:/Users/USER/Desktop/Use/Unity/Version/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/USER/Desktop/Use/GitHub/Project_A/Proj_A/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Graphics (ID=0x1636)
+    Vendor:   ATI
+    VRAM:     7890 MB
+    Driver:   31.0.12029.1042
+Initialize mono
+Mono path[0] = 'C:/Users/USER/Desktop/Use/Unity/Version/2021.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/USER/Desktop/Use/Unity/Version/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Users/USER/Desktop/Use/Unity/Version/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56956
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/USER/Desktop/Use/Unity/Version/2021.3.8f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Users/USER/Desktop/Use/Unity/Version/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.011584 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 71.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.685 seconds
+Domain Reload Profiling:
+	ReloadAssembly (686ms)
+		BeginReloadAssembly (95ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (474ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (105ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (290ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (57ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (72ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (106ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009137 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001474A79D1D0 doesn't match image C:\Users\USER\Desktop\Use\GitHub\Project_A\Proj_A\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\USER\Desktop\Use\GitHub\Project_A\Proj_A\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\USER\Desktop\Use\GitHub\Project_A\Proj_A\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.134 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1135ms)
+		BeginReloadAssembly (239ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (135ms)
+		EndReloadAssembly (770ms)
+			LoadAssemblies (100ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (243ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (346ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3389 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (55.3 KB). Loaded Objects now: 3855.
+Memory consumption went from 118.4 MB to 118.3 MB.
+Total: 3.282700 ms (FindLiveObjects: 0.321300 ms CreateObjectMapping: 0.086400 ms MarkObjects: 2.782800 ms  DeleteObjects: 0.090600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 198485.003802 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random A Half.prefab
+  artifactKey: Guid(e13c4ffed01962347ad9e2daf8b9776e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random A Half.prefab using Guid(e13c4ffed01962347ad9e2daf8b9776e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9583a0b8443b99bdff0d068a12541ce4') in 0.158729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.396709 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random A Half.prefab
+  artifactKey: Guid(e13c4ffed01962347ad9e2daf8b9776e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random A Half.prefab using Guid(e13c4ffed01962347ad9e2daf8b9776e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fe0738513d5579cf0be8ccd8fbfdf06') in 0.037439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 191.401158 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random A Half.prefab
+  artifactKey: Guid(e13c4ffed01962347ad9e2daf8b9776e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random A Half.prefab using Guid(e13c4ffed01962347ad9e2daf8b9776e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67df6ab2809f96e764bca3e428bfb6ae') in 0.035135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.324911 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random B Half.prefab
+  artifactKey: Guid(72f94e816dd97884ba0b2c00d1b90383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random B Half.prefab using Guid(72f94e816dd97884ba0b2c00d1b90383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99033f50933492d69e20c0e806bd1b6d') in 0.040225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 70.436065 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random C Half.prefab
+  artifactKey: Guid(831f9482b32047c41b9bfdf6c73ac4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random C Half.prefab using Guid(831f9482b32047c41b9bfdf6c73ac4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84fd6c3b26d87b25c872d0aaf3d161c0') in 0.036862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.095733 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random B Half.prefab
+  artifactKey: Guid(72f94e816dd97884ba0b2c00d1b90383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random B Half.prefab using Guid(72f94e816dd97884ba0b2c00d1b90383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a806c6088cb42e9cb93e46df852d62ec') in 0.037972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.027096 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random C Half.prefab
+  artifactKey: Guid(831f9482b32047c41b9bfdf6c73ac4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random C Half.prefab using Guid(831f9482b32047c41b9bfdf6c73ac4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14a79269847174fe5ecb978fa857f8a2') in 0.038684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 315.863970 seconds.
+  path: Assets/3_Prefab/Random/RanPart/RanPart_A_NightDutyRoom.prefab
+  artifactKey: Guid(164a978d78346cb47ac00a68a35e2c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/RanPart/RanPart_A_NightDutyRoom.prefab using Guid(164a978d78346cb47ac00a68a35e2c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '084721ccf712fc9bbb85c7b843fb1ea4') in 0.036396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.641191 seconds.
+  path: Assets/3_Prefab/Random/RanPart/RanPart_A_Bath.prefab
+  artifactKey: Guid(3370df3c685a8d349b9fa6395438c599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/RanPart/RanPart_A_Bath.prefab using Guid(3370df3c685a8d349b9fa6395438c599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b14856ee378fd0314692bd0e0793258f') in 0.040014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.340596 seconds.
+  path: Assets/3_Prefab/Random/RanPart/RanPart_A_NightDutyRoom.prefab
+  artifactKey: Guid(164a978d78346cb47ac00a68a35e2c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/RanPart/RanPart_A_NightDutyRoom.prefab using Guid(164a978d78346cb47ac00a68a35e2c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc709211b206d31e1a863854e99bcbfd') in 0.035933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.860188 seconds.
+  path: Assets/3_Prefab/Random/RanPart/RanPart_B_Doctor'sOffice.prefab
+  artifactKey: Guid(3c97a8882bb327b40904b251b199e526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/RanPart/RanPart_B_Doctor'sOffice.prefab using Guid(3c97a8882bb327b40904b251b199e526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e694e7632b3503e5699f9db5b1d5ca43') in 0.044265 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.794376 seconds.
+  path: Assets/3_Prefab/Random/RanPart/RanPart_B_LaundryRoom.prefab
+  artifactKey: Guid(ec17e9ae46771cb43b43a4d204379c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/RanPart/RanPart_B_LaundryRoom.prefab using Guid(ec17e9ae46771cb43b43a4d204379c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa67f941d2ac75aebd3dbe7be81121ca') in 0.036632 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.216859 seconds.
+  path: Assets/3_Prefab/Random/RanPart/RanPart_B_LaundryRoom.prefab
+  artifactKey: Guid(ec17e9ae46771cb43b43a4d204379c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/RanPart/RanPart_B_LaundryRoom.prefab using Guid(ec17e9ae46771cb43b43a4d204379c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcc6b9bd90cb3f08db80e1153797328b') in 0.039053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.459466 seconds.
+  path: Assets/3_Prefab/Random/RanPart/RanPart_B_RestRoom.prefab
+  artifactKey: Guid(ba0a5c105a8b8e245b1644f2ab129eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/RanPart/RanPart_B_RestRoom.prefab using Guid(ba0a5c105a8b8e245b1644f2ab129eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea8b9bee345829b062116465690e750b') in 0.043738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.729785 seconds.
+  path: Assets/3_Prefab/Random/RanPart/RanPart_B_Morgue.prefab
+  artifactKey: Guid(7a4aab4947aed8a49a6a438f721fafac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/RanPart/RanPart_B_Morgue.prefab using Guid(7a4aab4947aed8a49a6a438f721fafac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b912bc9ad363f6297883e4c461774f2') in 0.041593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 140.941783 seconds.
+  path: Assets/3_Prefab/Random/RanPart/RanPart_A(Quarter)_1 Room.prefab
+  artifactKey: Guid(545302376e794c24d8d287ccca5669d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/RanPart/RanPart_A(Quarter)_1 Room.prefab using Guid(545302376e794c24d8d287ccca5669d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7973ac41bb2cdd3386e072811508457') in 0.035642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.053903 seconds.
+  path: Assets/3_Prefab/Random/RanPart/RanPart_A(Quarter)_Toilet.prefab
+  artifactKey: Guid(e81ad8fb51edc8a4a93c1890ce518ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/RanPart/RanPart_A(Quarter)_Toilet.prefab using Guid(e81ad8fb51edc8a4a93c1890ce518ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17df7dff49fdea2ffad3b95ed7a6b60e') in 0.038110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.029294 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random A-1.prefab
+  artifactKey: Guid(19b795f63f9d75f4a8e0ccbc4eac0ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random A-1.prefab using Guid(19b795f63f9d75f4a8e0ccbc4eac0ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66fabed591af1afbb27f51d1004640a7') in 0.029588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.662900 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random B-1.prefab
+  artifactKey: Guid(1d6334db718cea24096f37ddd7642d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random B-1.prefab using Guid(1d6334db718cea24096f37ddd7642d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '333898cc4c1b84e848f48949ddee9f67') in 0.032882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.128681 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random C Half.prefab
+  artifactKey: Guid(831f9482b32047c41b9bfdf6c73ac4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random C Half.prefab using Guid(831f9482b32047c41b9bfdf6c73ac4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abc817d92abf128d2638696250d3f720') in 0.041911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.071536 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random C-1.prefab
+  artifactKey: Guid(ee46b7513f1fbb84b80222b6b0f1458e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random C-1.prefab using Guid(ee46b7513f1fbb84b80222b6b0f1458e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c526e6709b721c9a48318666ea3beb') in 0.047308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1668.762154 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random A Half.prefab
+  artifactKey: Guid(e13c4ffed01962347ad9e2daf8b9776e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random A Half.prefab using Guid(e13c4ffed01962347ad9e2daf8b9776e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa32b97cc9b014a4b418c3bea9e2b83') in 0.055109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.892251 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random B Half.prefab
+  artifactKey: Guid(72f94e816dd97884ba0b2c00d1b90383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random B Half.prefab using Guid(72f94e816dd97884ba0b2c00d1b90383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3492272dacc2457efff2477b03df12da') in 0.037735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.010094 seconds.
+  path: Assets/3_Prefab/Random/RanPart/RanPart_A(Quarter)_1 Room.prefab
+  artifactKey: Guid(545302376e794c24d8d287ccca5669d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/RanPart/RanPart_A(Quarter)_1 Room.prefab using Guid(545302376e794c24d8d287ccca5669d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76405e055adb24d1918e77b4bb97df19') in 0.031571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.408939 seconds.
+  path: Assets/3_Prefab/Random/RanPart/RanPart_A(Quarter)_Toilet.prefab
+  artifactKey: Guid(e81ad8fb51edc8a4a93c1890ce518ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/RanPart/RanPart_A(Quarter)_Toilet.prefab using Guid(e81ad8fb51edc8a4a93c1890ce518ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c324fc67b8979fa7dcbc9da066e7faa8') in 0.033222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.357266 seconds.
+  path: Assets/3_Prefab/Random/RanPart/RanPart_A_Bath.prefab
+  artifactKey: Guid(3370df3c685a8d349b9fa6395438c599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/RanPart/RanPart_A_Bath.prefab using Guid(3370df3c685a8d349b9fa6395438c599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f8530122e83037fcebf9148a0cff541') in 0.036609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.973067 seconds.
+  path: Assets/3_Prefab/Random/RanPart/RanPart_A_NightDutyRoom.prefab
+  artifactKey: Guid(164a978d78346cb47ac00a68a35e2c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/RanPart/RanPart_A_NightDutyRoom.prefab using Guid(164a978d78346cb47ac00a68a35e2c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b1fabddeca300eefd5f133565e26a24') in 0.034852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.648607 seconds.
+  path: Assets/3_Prefab/Random/RanPart/RanPart_B_LaundryRoom.prefab
+  artifactKey: Guid(ec17e9ae46771cb43b43a4d204379c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/RanPart/RanPart_B_LaundryRoom.prefab using Guid(ec17e9ae46771cb43b43a4d204379c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '385fcbf6d8a1995c799705093b8be536') in 0.039106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.487258 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random C Half.prefab
+  artifactKey: Guid(831f9482b32047c41b9bfdf6c73ac4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random C Half.prefab using Guid(831f9482b32047c41b9bfdf6c73ac4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b987fad69a3dd48d5ef0c24d7b040366') in 0.039038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 68.455588 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random A-1.prefab
+  artifactKey: Guid(19b795f63f9d75f4a8e0ccbc4eac0ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random A-1.prefab using Guid(19b795f63f9d75f4a8e0ccbc4eac0ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fedaba40b49a3603230dc42928ee0bc') in 0.027651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.826543 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random A-1.prefab
+  artifactKey: Guid(19b795f63f9d75f4a8e0ccbc4eac0ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random A-1.prefab using Guid(19b795f63f9d75f4a8e0ccbc4eac0ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dd6fd5a105903568942939c1407f60f') in 0.024521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.535063 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random B-1.prefab
+  artifactKey: Guid(1d6334db718cea24096f37ddd7642d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random B-1.prefab using Guid(1d6334db718cea24096f37ddd7642d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48285b579de9b6d37089194c3e2cbf6e') in 0.025473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.900943 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random C-1.prefab
+  artifactKey: Guid(ee46b7513f1fbb84b80222b6b0f1458e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random C-1.prefab using Guid(ee46b7513f1fbb84b80222b6b0f1458e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e251817be50eb26a1efed18437c2adec') in 0.028043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.820426 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random B-1.prefab
+  artifactKey: Guid(1d6334db718cea24096f37ddd7642d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random B-1.prefab using Guid(1d6334db718cea24096f37ddd7642d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5b5530a3b2a247f56c6a34accb049fc') in 0.025415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.270539 seconds.
+  path: Assets/3_Prefab/Random/[ 양식 ]/Random A-1.prefab
+  artifactKey: Guid(19b795f63f9d75f4a8e0ccbc4eac0ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/[ 양식 ]/Random A-1.prefab using Guid(19b795f63f9d75f4a8e0ccbc4eac0ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97ca235b7afb74dd91b7c7bd3e937d1b') in 0.024577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.674176 seconds.
+  path: Assets/3_Prefab/Random/RanPart/RanPart_B_Doctor'sOffice.prefab
+  artifactKey: Guid(3c97a8882bb327b40904b251b199e526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3_Prefab/Random/RanPart/RanPart_B_Doctor'sOffice.prefab using Guid(3c97a8882bb327b40904b251b199e526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e03c4bdb1fff8012c311987686299d04') in 0.037785 seconds 

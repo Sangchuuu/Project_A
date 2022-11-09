@@ -1669,8 +1669,8 @@ Transform:
   m_LocalScale: {x: 31.5, y: 4, z: 23.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6735206220320151369}
-  m_RootOrder: 3
+  m_Father: {fileID: 4813385017732672491}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7898386067654178866
 MeshFilter:
@@ -5234,7 +5234,7 @@ Transform:
   m_LocalScale: {x: 1.6, y: 1, z: 2.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6735206220320151369}
+  m_Father: {fileID: 2776507897884823617}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5392782190725006718
@@ -5497,6 +5497,39 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &4430776625687884375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4813385017732672491}
+  m_Layer: 0
+  m_Name: "Dummy (\uC784\uC2DC)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4813385017732672491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4430776625687884375}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 543716819043977203}
+  - {fileID: 1567722431979359929}
+  m_Father: {fileID: 6735206220320151369}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4469481359745596738
 GameObject:
   m_ObjectHideFlags: 0
@@ -7667,10 +7700,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4348064877060599936}
-  - {fileID: 3789188851137637119}
-  - {fileID: 543716819043977203}
-  - {fileID: 1567722431979359929}
+  - {fileID: 2776507897884823617}
+  - {fileID: 4813385017732672491}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7772,6 +7803,39 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &6441190900213558600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2776507897884823617}
+  m_Layer: 0
+  m_Name: "Random (\uC704\uCE58 \uAC12)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2776507897884823617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6441190900213558600}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4348064877060599936}
+  - {fileID: 3789188851137637119}
+  m_Father: {fileID: 6735206220320151369}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6554590670426307091
 GameObject:
   m_ObjectHideFlags: 0
@@ -8168,8 +8232,8 @@ Transform:
   - {fileID: 3015407463478811205}
   - {fileID: 1228626847082634085}
   - {fileID: 6011026491371122881}
-  m_Father: {fileID: 6735206220320151369}
-  m_RootOrder: 2
+  m_Father: {fileID: 4813385017732672491}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6888070433021962608
 GameObject:
@@ -11354,7 +11418,7 @@ Transform:
   m_LocalScale: {x: 1.6, y: 1, z: 2.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6735206220320151369}
+  m_Father: {fileID: 2776507897884823617}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4830080524666668858
