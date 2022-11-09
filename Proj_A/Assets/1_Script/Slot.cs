@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class Slot : MonoBehaviour
 {
@@ -14,10 +15,18 @@ public class Slot : MonoBehaviour
     [SerializeField]
     private GameObject CountImage;
 
+    [SerializeField]
+    private Text text_ItemName;
+    [SerializeField]
+    private Text text_Iteminfo;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        itemimage.sprite = item.itemImage;
+        text_ItemName.text = item.itemName;
+        text_Iteminfo.text = item.iteminfo;
     }
 
     // Update is called once per frame

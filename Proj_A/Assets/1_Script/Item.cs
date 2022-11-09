@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "New Item", menuName = "New Item/item")] // 메뉴창을 통해 생성할 수 있는 로직
 public class Item : ScriptableObject // 게임 오브젝트에 붙일 필요 없고, 그 자체가 컴포넌트가 됨
@@ -13,6 +14,7 @@ public class Item : ScriptableObject // 게임 오브젝트에 붙일 필요 없고, 그 자체�
     public GameObject itemPrefab;
     public string iteminfo;
     //public int itemuse;
+    //테이블들어갈수있음
 
     // Start is called before the first frame update
     void Start()
