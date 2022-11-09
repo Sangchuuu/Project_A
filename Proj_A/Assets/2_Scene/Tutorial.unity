@@ -5450,15 +5450,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6698989039077902910, guid: 4c8eb87b0a7d81e4a8c2271b8cb3465b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6698989039077902910, guid: 4c8eb87b0a7d81e4a8c2271b8cb3465b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6698989039077902910, guid: 4c8eb87b0a7d81e4a8c2271b8cb3465b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.85
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6698989039077902910, guid: 4c8eb87b0a7d81e4a8c2271b8cb3465b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5494,7 +5494,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8779587163241251091, guid: 4c8eb87b0a7d81e4a8c2271b8cb3465b, type: 3}
       propertyPath: m_Height
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779587163241251091, guid: 4c8eb87b0a7d81e4a8c2271b8cb3465b, type: 3}
+      propertyPath: m_Radius
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779587163241251091, guid: 4c8eb87b0a7d81e4a8c2271b8cb3465b, type: 3}
+      propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779587163241251091, guid: 4c8eb87b0a7d81e4a8c2271b8cb3465b, type: 3}
+      propertyPath: m_Center.y
+      value: 0.91
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8779587163241251103, guid: 4c8eb87b0a7d81e4a8c2271b8cb3465b, type: 3}
@@ -11380,8 +11392,8 @@ MonoBehaviour:
   jumpTime: 0.6
   slidingPower: 8
   slidingTime: 1
-  cameraHstand: 2
-  cameraHsit: 0.4
+  cameraHstand: 1.5
+  cameraHsit: 0.8
   maxstamina: 100
   runstamina: 1
   jumpstamina: 20

@@ -301,8 +301,8 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(moveDir.normalized * Time.deltaTime * walkSpeed, Space.Self);
 
-        PlayerCollider.center = new Vector3(0, 0.93f, 0);
-        //PlayerCollider.height = 1.8f;
+        PlayerCollider.center = new Vector3(0, 0.91f, 0);
+        PlayerCollider.height = 1.8f;
         cameraH = cameraHstand;
 
     }
@@ -374,8 +374,8 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(moveDir.normalized * Time.deltaTime * sitSpeed, Space.Self);
 
-        PlayerCollider.center = new Vector3(0, 0.46f, 0);
-        PlayerCollider.height = 0.86f;
+        PlayerCollider.center = new Vector3(0, 0.33f, 0);
+        PlayerCollider.height = 0.64f;
         cameraH = cameraHsit;
 
 
@@ -394,8 +394,8 @@ public class PlayerController : MonoBehaviour
                 nowstamina = 0;
             }
 
-            PlayerCollider.center = new Vector3(0, 0.37f, 0);
-            PlayerCollider.height = 0.68f;
+            PlayerCollider.center = new Vector3(0, 0.33f, 0);
+            PlayerCollider.height = 0.64f;
             cameraH = cameraHsit;
 
             Vector3 aa = new Vector3(this.transform.forward.x, 0f, this.transform.forward.z);
@@ -463,7 +463,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                Debug.Log("없어");
+               // Debug.Log("없어");
             }
 
 
