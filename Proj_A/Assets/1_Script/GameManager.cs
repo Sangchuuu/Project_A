@@ -50,7 +50,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-       
+        inventoryopen = false;
+        InventoryRayout.gameObject.SetActive(inventoryopen);
     }
 
     // Update is called once per frame
