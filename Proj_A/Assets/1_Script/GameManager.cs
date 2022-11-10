@@ -23,6 +23,12 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
+
+    //public List <GameObject> ItemObjectList;
+
+    [SerializeField]
+    //private bool itemgain; // æ∆¿Ã≈€ √≥¿Ω »πµÊø©∫Œ
+
     //public static GameManager GetInstance()
     //{
     //    if(instance == null)

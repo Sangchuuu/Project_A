@@ -24,16 +24,16 @@ public class Slot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        itemimage.sprite = item.itemImage;
-        text_ItemName.text = item.itemName;
-        text_Iteminfo.text = item.iteminfo;
+        //itemimage.sprite = item.itemImage;
+        //text_ItemName.text = item.itemName;
+        //text_Iteminfo.text = item.iteminfo;
     }
 
     // Update is called once per frame
     void Update()
     {
         //AddItem(item);
-        SetSlotCount(itemcount);
+        //SetSlotCount(itemcount);
     }
 
     private void SetColor(float _alpha)
@@ -74,6 +74,9 @@ public class Slot : MonoBehaviour
             Color color = itemimage.GetComponent<Image>().color;
             color.a = 0.1f;
             itemimage.GetComponent<Image>().color = color;
+
+            text_ItemName.text = "????";
+            text_Iteminfo.text = "????? ?????? ???????\n ?????????? ????????????";
         }
     }
 

@@ -358,6 +358,7 @@
 "Assets/1_Script/GameManager.cs"
 "Assets/1_Script/Inventory.cs"
 "Assets/1_Script/Item.cs"
+"Assets/1_Script/ItemGainCtrl.cs"
 "Assets/1_Script/ItemPickup.cs"
 "Assets/1_Script/MainCamera.cs"
 "Assets/1_Script/MainCameraController.cs"
