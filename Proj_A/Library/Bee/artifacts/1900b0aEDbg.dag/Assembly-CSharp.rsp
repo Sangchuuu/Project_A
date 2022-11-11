@@ -355,6 +355,7 @@
 "Assets/1_Script/BloodyDoor.cs"
 "Assets/1_Script/BreakingLight.cs"
 "Assets/1_Script/Door.cs"
+"Assets/1_Script/DoorTriggerTest.cs"
 "Assets/1_Script/GameManager.cs"
 "Assets/1_Script/Inventory.cs"
 "Assets/1_Script/Item.cs"

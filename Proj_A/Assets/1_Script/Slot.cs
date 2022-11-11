@@ -24,17 +24,15 @@ public class Slot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //itemimage.sprite = item.itemImage;
-        //text_ItemName.text = item.itemName;
-        //text_Iteminfo.text = item.iteminfo;
+        ClearSlot();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //AddItem(item);
-        //SetSlotCount(itemcount);
-    }
+    //// Update is called once per frame
+    //void Update()
+    //{
+    //    AddItem(item);
+    //    SetSlotCount(itemcount);
+    //}
 
     private void SetColor(float _alpha)
     {
@@ -48,10 +46,13 @@ public class Slot : MonoBehaviour
         item = _item;
         itemcount = _count;
         itemimage.sprite = item.itemImage;
+        text_ItemName.text = item.itemName;
+        text_Iteminfo.text = item.iteminfo;
 
         if(item.itemtype == Item.ItemType.USEAGE)
         {
             CountImage.SetActive(true);
+            text_Count.gameObject.SetActive(true);
             text_Count.text = itemcount.ToString();
         }
         else
@@ -80,7 +81,7 @@ public class Slot : MonoBehaviour
         }
     }
 
-    /*private void ClearSlot() // ½½·Ô »èÁ¦(Áö±Ý ¾È¾¸)
+    private void ClearSlot() // ½½·Ô »èÁ¦(Áö±Ý ¾È¾¸)
     {
         item = null;
         itemcount = 0;
@@ -89,6 +90,6 @@ public class Slot : MonoBehaviour
 
         text_Count.text = "0";
         CountImage.SetActive(false);
-    }*/
+    }
 
 }

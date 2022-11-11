@@ -21,18 +21,27 @@ public class ItemGainCtrl : MonoBehaviour
     [SerializeField]
     private Inventory theInventory;
 
+   
+
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+        //AimCenter();
         CheckItem();
         TryAction();
     }
+
+    /*private void AimCenter()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(ScreenCenter);
+        Debug.DrawRay(transform.position, transform.forward * 10f, Color.red);
+    }*/
 
     private void TryAction()
     {
@@ -47,10 +56,11 @@ public class ItemGainCtrl : MonoBehaviour
     {
         if (Physics.Raycast(this.transform.position, transform.forward, out hitInfo, range, layerMask))
         {
+
             Debug.Log("Ray: ", hitInfo.collider.gameObject);
             if (hitInfo.collider.gameObject.tag == "Item")
             {
-               
+                //Gizmos.DrawRay(transform.position, transform.forward * hitInfo.distance);
                 ItemInfoAppear();
             }
 
@@ -67,7 +77,7 @@ public class ItemGainCtrl : MonoBehaviour
     {
         pickupActivated = true;
         actionText.gameObject.SetActive(true);
-        actionText.text = hitInfo.transform.GetComponent<ItemPickup>().item.itemName + "È¹µæ" + "<color=yellow>" + "(E)" + "</color>";
+        actionText.text = hitInfo.transform.GetComponent<ItemPickup>().item.itemName + "È¹µæ" + "<color=yellow>" + "(RClick)" + "</color>";
 
     }
 
