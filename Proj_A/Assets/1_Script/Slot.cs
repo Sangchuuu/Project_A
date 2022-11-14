@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using static UnityEditor.Progress;
+using UnityEngine.EventSystems;
+using System.Runtime.CompilerServices;
 
-public class Slot : MonoBehaviour
+public class Slot : MonoBehaviour,IPointerClickHandler
 {
     public Item item;
     public int itemcount;
     public Image itemimage;
+
+    public Image Zoomimage;
+
+    [SerializeField]
+    private bool i_zoom = false;
 
     [SerializeField]
     private Text text_Count;
@@ -23,16 +30,17 @@ public class Slot : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    {       
         ClearSlot();
     }
 
     //// Update is called once per frame
-    //void Update()
-    //{
-    //    AddItem(item);
-    //    SetSlotCount(itemcount);
-    //}
+    void Update()
+    {
+        //    AddItem(item);
+        //    SetSlotCount(itemcount);
+        ImageClose();
+    }
 
     private void SetColor(float _alpha)
     {
@@ -90,6 +98,48 @@ public class Slot : MonoBehaviour
 
         text_Count.text = "0";
         CountImage.SetActive(false);
+    }
+
+    public void OnPointerClick(PointerEventData eventdata) // 마우스 혹은 터치 입력, 드래그 등의 데이터 정보를 담고 있음
+    {
+        if(eventdata.button == PointerEventData.InputButton.Left) // 마우스 우클릭 데이터 들어올때
+        {
+            if(item != null)
+            {
+                if(item.itemtype == Item.ItemType.USEAGE)
+                {
+                    SetSlotCount(-1);
+                }
+                else if (item.itemtype == Item.ItemType.STORY)
+                {
+                    /*RectTransform rectTran = gameObject.GetComponent<RectTransform>();
+
+                    rectTran.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 1200);
+                    rectTran.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 700);
+
+                    Vector3 Position = itemimage.transform.localPosition;
+
+                    Position.x = 0;
+                    Position.y = 0;
+                    itemimage.transform.localPosition = Position;*/
+
+                    i_zoom = true;
+                    Zoomimage.sprite = item.itemImage;
+                    Zoomimage.gameObject.SetActive(true);
+                }
+
+
+            }
+
+        }
+    }
+
+    void ImageClose()
+    {
+        if(i_zoom == true && Input.GetKeyDown(KeyCode.E))
+        {
+            Zoomimage.gameObject.SetActive(false);
+        }
     }
 
 }

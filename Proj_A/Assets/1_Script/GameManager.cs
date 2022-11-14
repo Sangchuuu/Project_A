@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -22,6 +23,8 @@ public class GameManager : MonoBehaviour
     private bool inventoryopen;
 
     public static GameManager instance;
+
+    
 
 
     //public List <GameObject> ItemObjectList;
@@ -55,8 +58,8 @@ public class GameManager : MonoBehaviour
 
 
     void Start()
-    {
-        inventoryopen = false;
+    {       
+        inventoryopen = false;      
         InventoryRayout.gameObject.SetActive(inventoryopen);
     }
 

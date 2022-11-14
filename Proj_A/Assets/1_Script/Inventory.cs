@@ -8,10 +8,14 @@ public class Inventory : MonoBehaviour
 
     [SerializeField]
     private GameObject InventoryBase;
+
     [SerializeField]
     private GameObject SlotParent;
+
     [SerializeField]
     private Slot[] slots; // 
+
+    //public static Inventory inventory;
 
     // Start is called before the first frame update
     void Start()
