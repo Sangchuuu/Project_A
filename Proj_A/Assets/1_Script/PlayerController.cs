@@ -213,6 +213,7 @@ public class PlayerController : MonoBehaviour
                         batterynum -= 1;
                         batteryOnOff = true;
                         batterybar1.SetActive(true);
+                        nowbattery = maxbattery;
                     }
                 }
 
@@ -224,7 +225,7 @@ public class PlayerController : MonoBehaviour
                         flashilightstate = false;
                         flashlight.SetActive(false);
                         batterybar1.SetActive(true);
-
+                        nowbattery = maxbattery;
                     }
                 }
             }
