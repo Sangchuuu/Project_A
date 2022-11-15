@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     //public Transform objectFrontVector;
     public Camera vcamera;
+    public Animator animator;
 
     public GameObject flashlight;
     private bool flashilightstate = false;
@@ -66,7 +67,28 @@ public class PlayerController : MonoBehaviour
 
     [Space(15f)]
 
+    [Header("손전등 배터리 관련")]
+    public float maxbattery = 100;
+    public float secbattery = 1;
+    private float nowbattery;
+    private bool batteryOnOff = false;
+    public int batterynum = 5;
+    public float battery1_Off = 7f;
+    public float battery1_On = 0.7f;
+    public float battery2_Off = 5f;
+    public float battery2_On = 1.5f;
+    public float battery1state = 0.2f;
+    public float battery2state = 0.1f;
+    private float batterytimeCycle = 0f;
+    private bool batterybool = false;
+    private bool batteryOff1 = false;
+    private bool batteryOff2 = false;
+    private Vector2 batterybarmax;
 
+    public GameObject batterybar1;
+    public Text batterynumtext;
+
+    [Space(15f)]
 
     public GameObject staminabar1;
     public GameObject staminabar2;
@@ -79,7 +101,7 @@ public class PlayerController : MonoBehaviour
 
     public CapsuleCollider PlayerCollider;
 
-
+    public GameObject camerafoller;
 
     private float yRotate, yRotateMove;
     public float rotateSpeed = 500.0f;
@@ -89,17 +111,25 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody Playerrigidbody;
 
+    private bool walkOn = false;
+    private bool RunOn = false;
+
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         Playerrigidbody = GetComponent<Rigidbody>();
 
         staminaRGB = staminabar1.GetComponent<RawImage>();
+
+        nowbattery = maxbattery;
 
         playermovestate = 1;
 
         nowstaminaRGB = 0;
 
         staminabarmax = staminabar1.transform.localScale; //스태미나바의 최대 길이를 저장
+        batterybarmax = batterybar1.transform.localScale;
 
         nowstamina = maxstamina; //시작시 현재 스태미나를 맥스 스태미나로
     }
@@ -110,6 +140,10 @@ public class PlayerController : MonoBehaviour
         //Debug.Log("플레이어 상태 : "+playermovestate);
         PlayerRayCast();
         StaminaBarController(nowstamina, maxstamina);
+
+        animator.SetBool("pWalk", walkOn);
+        animator.SetBool("pRun", RunOn);
+
 
         if (staminarecoveryONOFF == false)
         {
@@ -132,6 +166,8 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+
+    
 
 
 
@@ -165,11 +201,45 @@ public class PlayerController : MonoBehaviour
         }
 
 
-
-
-
         Camerafollow();
         PlayerRotate();
+
+        if(playermovestate == 1 || playermovestate == 2 || playermovestate == 6) //베터리 교체
+        {
+            if (batterynum > 0)
+            {
+                if(batteryOnOff == false)
+                {
+                    if (Input.GetKeyDown(KeyCode.R))
+                    {
+                        batterynum -= 1;
+                        batteryOnOff = true;
+                        batterybar1.SetActive(true);
+                        nowbattery = maxbattery;
+                    }
+                }
+
+                if (nowbattery < maxbattery*battery1state)
+                {
+                    if (Input.GetKeyDown(KeyCode.R))
+                    {
+                        batterynum -= 1;
+                        flashilightstate = false;
+                        flashlight.SetActive(false);
+                        batterybar1.SetActive(true);
+                        nowbattery = maxbattery;
+                    }
+                }
+            }
+        }
+
+        batterysystem();
+        batterBarController(nowbattery, maxbattery);
+        batterynumtext.text = batterynum.ToString();
+
+
+
+        Debug.Log(batterynum + " 개 : " + nowbattery);
 
         if (jumpstate == false)
         {
@@ -177,15 +247,18 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(1))
                 {
-                    if (flashilightstate)
+                    if (batteryOnOff == true)
                     {
-                        flashilightstate = false;
-                        flashlight.SetActive(false);
-                    }
-                    else
-                    {
-                        flashilightstate = true;
-                        flashlight.SetActive(true);
+                        if (flashilightstate)
+                        {
+                            flashilightstate = false;
+                            flashlight.SetActive(false);
+                        }
+                        else
+                        {
+                            flashilightstate = true;
+                            flashlight.SetActive(true);
+                        }
                     }
                 }
             }
@@ -196,6 +269,8 @@ public class PlayerController : MonoBehaviour
         {
             PlayerWalk();
         }
+        else
+            walkOn = false;
 
 
         if (jumpstate == false)
@@ -210,7 +285,12 @@ public class PlayerController : MonoBehaviour
         }
 
         if (playermovestate == 2)
+        {
             PlayerRun();
+            RunOn = true;
+        }
+        else
+            RunOn = false;
 
         if (playermovestate == 3)
             PlayerSitDown();
@@ -288,7 +368,8 @@ public class PlayerController : MonoBehaviour
 
     public void Camerafollow()
     {
-        Camera.main.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + cameraH, this.transform.position.z);
+        //Camera.main.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + cameraH, this.transform.position.z);
+        Camera.main.transform.position = camerafoller.transform.position + new Vector3(0,cameraH,0);
     }
 
     public void PlayerWalk()
@@ -300,6 +381,20 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDir = (Vector3.forward * v) + (Vector3.right * h);
 
         transform.Translate(moveDir.normalized * Time.deltaTime * walkSpeed, Space.Self);
+
+
+        
+
+        if (Input.GetAxis("Vertical") != 0)
+        {
+            walkOn = true;         
+        }
+        else
+        {
+            walkOn = false; 
+        }
+
+        //animator.SetFloat("pRun", playermovestate);
 
         PlayerCollider.center = new Vector3(0, 0.91f, 0);
         PlayerCollider.height = 1.8f;
@@ -321,6 +416,7 @@ public class PlayerController : MonoBehaviour
             nowstamina -= (runstamina * Time.deltaTime);
             staminarecoveryONOFF = false;
             staminarecoverytimeCycle = 0;
+
 
             if (nowstamina < 0)
             {
@@ -419,9 +515,22 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void batterBarController(float state, float state_max)
+    {
+
+        float fStateRat = state / state_max;
+
+        float rectsize = batterybarmax.y * fStateRat;
+
+
+        batterybar1.transform.localScale = new Vector2(staminabarmax.x, rectsize);
+
+    }
+
     public void PlayerRayCast()
     {
         RaycastHit hit;
+
         if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
         {
             string objectname = null;
@@ -434,23 +543,25 @@ public class PlayerController : MonoBehaviour
                 GameObject gameObject;
 
                 Debug.Log(objectHit.name);
-                objectname = objectHit.name;
-                objecttag = objectHit.tag;
+              
+                    objectname = objectHit.name;
+                    objecttag = objectHit.tag;
 
-                if (objecttag == "Door")
-                {
-                    gameObject = hit.transform.gameObject;
-                    gameObject.GetComponent<Door>().ChangeDoorState();
 
-                }
+                    if (objecttag == "Door")
+                    {
+                        gameObject = hit.transform.gameObject;
+                        gameObject.GetComponent<Door>().ChangeDoorState();
 
-                if (objectname == "Door_Wood")
-                {
-                    gameObject = hit.transform.gameObject;
-                    gameObject.GetComponent<BloodyDoor>().ChangeDoorState();
+                    }
 
-                }
+                    if (objectname == "Door_Wood")
+                    {
+                        gameObject = hit.transform.gameObject;
+                        gameObject.GetComponent<BloodyDoor>().ChangeDoorState();
 
+                    }
+               
 
 
                 //if (objecttag == "Item")
@@ -469,6 +580,94 @@ public class PlayerController : MonoBehaviour
 
         }
 
+    }
+
+    public void batterysystem()//손전등 배터리 관련 함수
+    {
+        if (flashilightstate == true)//손전등 게이지 소모 관련
+        {
+            nowbattery -= secbattery * Time.deltaTime;
+
+            if (nowbattery <= maxbattery*battery1state && nowbattery > maxbattery*battery2state)
+            {
+                if (batteryOff1 == false)
+                {
+                    batterytimeCycle = 0;
+                    batteryOff1 = true;
+                    batterybool = false;
+                    flashlight.SetActive(false);
+                }
+
+                batterytimeCycle += Time.deltaTime;
+
+                if (batterybool == false)
+                {
+                    if (batterytimeCycle >= battery1_On)
+                    {
+                        flashlight.SetActive(true);
+                        batterybool = true;
+                        batterytimeCycle = 0;
+                    }
+                }
+                if (batterybool == true)
+                {
+                    if (batterytimeCycle >= battery1_Off)
+                    {
+                        flashlight.SetActive(false);
+                        batterybool = false;
+                        batterytimeCycle = 0;
+                    }
+                }
+
+            }
+
+
+            if (nowbattery <= maxbattery*battery2state && nowbattery > 0)
+            {
+                if (batteryOff2 == false)
+                {
+                    batterytimeCycle = 0;
+                    batteryOff2 = true;
+                    batterybool = false;
+                    flashlight.SetActive(false);
+                }
+
+                batterytimeCycle += Time.deltaTime;
+
+                if (batterybool == false)
+                {
+                    if (batterytimeCycle >= battery2_On)
+                    {
+                        flashlight.SetActive(true);
+                        batterybool = true;
+                        batterytimeCycle = 0;
+                    }
+                }
+                if (batterybool == true)
+                {
+                    if (batterytimeCycle >= battery2_Off)
+                    {
+                        flashlight.SetActive(false);
+                        batterybool = false;
+                        batterytimeCycle = 0;
+                    }
+                }
+            }
+
+            if (nowbattery <= 0)
+            {
+                batteryOff1 = false;
+                batteryOff2 = false;
+                batterybool = false;
+                flashlight.SetActive(false);
+                batterybar1.SetActive(false);
+                batteryOnOff = false;
+                flashilightstate = false;
+                nowbattery = maxbattery;
+            }
+        }
+
+        
     }
 
     public void pakuruOn()
