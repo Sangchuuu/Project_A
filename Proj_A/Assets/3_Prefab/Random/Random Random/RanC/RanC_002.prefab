@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7885188387650726375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5809566088157346270}
+  m_Layer: 0
+  m_Name: RanC_002
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5809566088157346270
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7885188387650726375}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9020294514070813106}
+  - {fileID: 2283940481905517791}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3113423035762598874
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5809566088157346270}
+    m_Modifications:
+    - target: {fileID: 6204728630736427624, guid: 68657f527d1cf5a42b47b340df6686be, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 68657f527d1cf5a42b47b340df6686be, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 68657f527d1cf5a42b47b340df6686be, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 68657f527d1cf5a42b47b340df6686be, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 68657f527d1cf5a42b47b340df6686be, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 68657f527d1cf5a42b47b340df6686be, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 68657f527d1cf5a42b47b340df6686be, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 68657f527d1cf5a42b47b340df6686be, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 68657f527d1cf5a42b47b340df6686be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 68657f527d1cf5a42b47b340df6686be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 68657f527d1cf5a42b47b340df6686be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750997433390223193, guid: 68657f527d1cf5a42b47b340df6686be, type: 3}
+      propertyPath: m_Name
+      value: RanPart_C_Library
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 68657f527d1cf5a42b47b340df6686be, type: 3}
+--- !u!4 &9020294514070813106 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6204728630736427624, guid: 68657f527d1cf5a42b47b340df6686be, type: 3}
+  m_PrefabInstance: {fileID: 3113423035762598874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5307967238775602871
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5809566088157346270}
+    m_Modifications:
+    - target: {fileID: 6204728630736427624, guid: 52631be64e6d9364f9538223882e8958, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 52631be64e6d9364f9538223882e8958, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 52631be64e6d9364f9538223882e8958, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 52631be64e6d9364f9538223882e8958, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 52631be64e6d9364f9538223882e8958, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 52631be64e6d9364f9538223882e8958, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 52631be64e6d9364f9538223882e8958, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 52631be64e6d9364f9538223882e8958, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 52631be64e6d9364f9538223882e8958, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 52631be64e6d9364f9538223882e8958, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204728630736427624, guid: 52631be64e6d9364f9538223882e8958, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750997433390223193, guid: 52631be64e6d9364f9538223882e8958, type: 3}
+      propertyPath: m_Name
+      value: RanPart_C_StorageRoom
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52631be64e6d9364f9538223882e8958, type: 3}
+--- !u!4 &2283940481905517791 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6204728630736427624, guid: 52631be64e6d9364f9538223882e8958, type: 3}
+  m_PrefabInstance: {fileID: 5307967238775602871}
+  m_PrefabAsset: {fileID: 0}
