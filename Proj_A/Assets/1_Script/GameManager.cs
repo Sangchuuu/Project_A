@@ -21,6 +21,13 @@ public class GameManager : MonoBehaviour
     List<Transform> bigList = new List<Transform>();
     List<GameObject> bigRoomList = new List<GameObject>();
 
+    [SerializeField]
+    public GameObject InventoryRayout;
+    [SerializeField]
+    private bool inventoryopen;
+
+
+
 
     //private static GameManager _instance;
     /*
@@ -57,6 +64,9 @@ public class GameManager : MonoBehaviour
     {
         RandomList();
         BigRoomSpawn();
+
+        inventoryopen = false;
+        InventoryRayout.gameObject.SetActive(inventoryopen);
     }
 
     // Update is called once per frame
@@ -66,7 +76,20 @@ public class GameManager : MonoBehaviour
         {
             StartCoroutine(SpawnEnemy());
         }
-            
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            if (inventoryopen == true)
+            {
+                inventoryopen = false;
+            }
+            else if (inventoryopen == false)
+            {
+                inventoryopen = true;
+            }
+            OpenInventoryUI(inventoryopen);
+        }
+
     } 
 
     IEnumerator SpawnEnemy()
@@ -114,6 +137,21 @@ public class GameManager : MonoBehaviour
             }
         }        
     }
-    
+
+    public void OpenInventoryUI(bool open)
+    {
+        if (open == true)
+        {
+            InventoryRayout.gameObject.SetActive(open);
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            InventoryRayout.gameObject.SetActive(open);
+        }
+    }
+
+
 
 }

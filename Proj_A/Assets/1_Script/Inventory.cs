@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -18,9 +19,17 @@ public class Inventory : MonoBehaviour
     //public static Inventory inventory;
 
     // Start is called before the first frame update
-    void Start()
+
+    /*private void Awake()
     {
         slots = SlotParent.GetComponentsInChildren<Slot>();
+    }*/
+
+
+
+    void Start()
+    {
+       slots = SlotParent.GetComponentsInChildren<Slot>();
         //슬롯이라는 객체가 들어있는 자식 오브젝트를 가져온다
     }
 
