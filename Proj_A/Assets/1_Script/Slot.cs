@@ -9,7 +9,10 @@ using System.Runtime.CompilerServices;
 public class Slot : MonoBehaviour,IPointerClickHandler
 {
     public Item item;
+
+    //[Range(0,255)]
     public int itemcount;
+    
     public Image itemimage;
 
     public Image Zoomimage;
@@ -84,8 +87,8 @@ public class Slot : MonoBehaviour,IPointerClickHandler
             color.a = 0.1f;
             itemimage.GetComponent<Image>().color = color;
 
-            text_ItemName.text = "????";
-            text_Iteminfo.text = "????? ?????? ???????\n ?????????? ????????????";
+            /*text_ItemName.text = "????";
+            text_Iteminfo.text = "????? ?????? ???????\n ?????????? ????????????";*/
         }
     }
 
@@ -108,7 +111,10 @@ public class Slot : MonoBehaviour,IPointerClickHandler
             {
                 if(item.itemtype == Item.ItemType.USEAGE)
                 {
-                    SetSlotCount(-1);
+                    if (itemcount > 0)
+                    {
+                        SetSlotCount(-1);
+                    }
                 }
                 else if (item.itemtype == Item.ItemType.STORY)
                 {
