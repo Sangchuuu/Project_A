@@ -11606,13 +11606,15 @@ MonoBehaviour:
   staminarecoverytime2: 4
   staminaRGBdis: 100
   PlayerRaycastL: 5
-  maxbattery: 25
+  maxbattery: 100
   secbattery: 1
   batterynum: 5
-  battery20_Off: 7
-  battery20_On: 0.7
-  battery10_Off: 5
-  battery10_On: 1.5
+  battery1_Off: 7
+  battery1_On: 0.7
+  battery2_Off: 5
+  battery2_On: 1.5
+  battery1state: 0.2
+  battery2state: 0.1
   batterybar1: {fileID: 530947161}
   batterynumtext: {fileID: 419181766}
   staminabar1: {fileID: 1730879812}

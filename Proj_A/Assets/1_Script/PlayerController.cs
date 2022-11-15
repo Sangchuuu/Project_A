@@ -73,10 +73,12 @@ public class PlayerController : MonoBehaviour
     private float nowbattery;
     private bool batteryOnOff = false;
     public int batterynum = 5;
-    public float battery20_Off = 7f;
-    public float battery20_On = 0.7f;
-    public float battery10_Off = 5f;
-    public float battery10_On = 1.5f;
+    public float battery1_Off = 7f;
+    public float battery1_On = 0.7f;
+    public float battery2_Off = 5f;
+    public float battery2_On = 1.5f;
+    public float battery1state = 0.2f;
+    public float battery2state = 0.1f;
     private float batterytimeCycle = 0f;
     private bool batterybool = false;
     private bool batteryOff1 = false;
@@ -217,7 +219,7 @@ public class PlayerController : MonoBehaviour
                     }
                 }
 
-                if (nowbattery < 20)
+                if (nowbattery < maxbattery*battery1state)
                 {
                     if (Input.GetKeyDown(KeyCode.R))
                     {
@@ -580,90 +582,92 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    public void batterysystem()
+    public void batterysystem()//손전등 배터리 관련 함수
     {
         if (flashilightstate == true)//손전등 게이지 소모 관련
         {
             nowbattery -= secbattery * Time.deltaTime;
-        }
 
-        if (nowbattery <= 20 && nowbattery > 10)
-        {
-            if (batteryOff1 == false)
+            if (nowbattery <= maxbattery*battery1state && nowbattery > maxbattery*battery2state)
             {
-                batterytimeCycle = 0;
-                batteryOff1 = true;
+                if (batteryOff1 == false)
+                {
+                    batterytimeCycle = 0;
+                    batteryOff1 = true;
+                    batterybool = false;
+                    flashlight.SetActive(false);
+                }
+
+                batterytimeCycle += Time.deltaTime;
+
+                if (batterybool == false)
+                {
+                    if (batterytimeCycle >= battery1_On)
+                    {
+                        flashlight.SetActive(true);
+                        batterybool = true;
+                        batterytimeCycle = 0;
+                    }
+                }
+                if (batterybool == true)
+                {
+                    if (batterytimeCycle >= battery1_Off)
+                    {
+                        flashlight.SetActive(false);
+                        batterybool = false;
+                        batterytimeCycle = 0;
+                    }
+                }
+
+            }
+
+
+            if (nowbattery <= maxbattery*battery2state && nowbattery > 0)
+            {
+                if (batteryOff2 == false)
+                {
+                    batterytimeCycle = 0;
+                    batteryOff2 = true;
+                    batterybool = false;
+                    flashlight.SetActive(false);
+                }
+
+                batterytimeCycle += Time.deltaTime;
+
+                if (batterybool == false)
+                {
+                    if (batterytimeCycle >= battery2_On)
+                    {
+                        flashlight.SetActive(true);
+                        batterybool = true;
+                        batterytimeCycle = 0;
+                    }
+                }
+                if (batterybool == true)
+                {
+                    if (batterytimeCycle >= battery2_Off)
+                    {
+                        flashlight.SetActive(false);
+                        batterybool = false;
+                        batterytimeCycle = 0;
+                    }
+                }
+            }
+
+            if (nowbattery <= 0)
+            {
+                batteryOff1 = false;
+                batteryOff2 = false;
                 batterybool = false;
                 flashlight.SetActive(false);
-            }
-
-            batterytimeCycle += Time.deltaTime;
-
-            if (batterybool == false)
-            {
-                if (batterytimeCycle >= battery20_On)
-                {
-                    flashlight.SetActive(true);
-                    batterybool = true;
-                    batterytimeCycle = 0;
-                }
-            }
-            if (batterybool == true)
-            {
-                if (batterytimeCycle >= battery20_Off)
-                {
-                    flashlight.SetActive(false);
-                    batterybool = false;
-                    batterytimeCycle = 0;
-                }
-            }
-
-        }
-
-
-        if (nowbattery <= 10 && nowbattery > 0)
-        {
-            if (batteryOff2 == false)
-            {
-                batterytimeCycle = 0;
-                batteryOff2 = true;
-                batterybool = false;
-                flashlight.SetActive(false);
-            }
-
-            batterytimeCycle += Time.deltaTime;
-
-            if (batterybool == false)
-            {
-                if (batterytimeCycle >= battery10_On)
-                {
-                    flashlight.SetActive(true);
-                    batterybool = true;
-                    batterytimeCycle = 0;
-                }
-            }
-            if (batterybool == true)
-            {
-                if (batterytimeCycle >= battery10_Off)
-                {
-                    flashlight.SetActive(false);
-                    batterybool = false;
-                    batterytimeCycle = 0;
-                }
+                batterybar1.SetActive(false);
+                batteryOnOff = false;
+                flashilightstate = false;
+                nowbattery = maxbattery;
             }
         }
 
-        if (nowbattery <= 0)
-        {
-            batteryOff1 = false;
-            batteryOff2 = false;
-            batterybool = false;
-            flashlight.SetActive(false);
-            batterybar1.SetActive(false);
-            batteryOnOff = false;
-            flashilightstate = false;
-            nowbattery = maxbattery;
-        }
+        
     }
 
     public void pakuruOn()
