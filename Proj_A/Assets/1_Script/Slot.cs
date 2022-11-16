@@ -43,6 +43,28 @@ public class Slot : MonoBehaviour,IPointerClickHandler
         //    AddItem(item);
         //    SetSlotCount(itemcount);
         ImageClose();
+        CheckAction();
+    }
+
+    private void CheckAction()
+    {
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            if (item != null)
+            {
+                if (item.itemtype == Item.ItemType.USEAGE)
+                {
+                    if (item.itemName == "¹èÅÍ¸®")
+                    {
+                        if (itemcount > 0)
+                        {
+                            SetSlotCount(-1);
+                        }
+                    }
+                }
+            }
+
+        }
     }
 
     private void SetColor(float _alpha)
