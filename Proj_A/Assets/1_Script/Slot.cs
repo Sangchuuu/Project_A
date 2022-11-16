@@ -54,7 +54,7 @@ public class Slot : MonoBehaviour,IPointerClickHandler
             {
                 if (item.itemtype == Item.ItemType.USEAGE)
                 {
-                    if (item.itemName == "배터리")
+                    if (item.itemName == "배터리") // 슬롯 내의 아이템 이름 비교 후, 이름이 배터리일때 카운트 감소
                     {
                         if (itemcount > 0)
                         {
