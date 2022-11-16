@@ -212,7 +212,9 @@ public class PlayerController : MonoBehaviour
                 {
                     if (Input.GetKeyDown(KeyCode.R))
                     {
-                        batterynum -= 1;
+                        //batterynum -= 1;
+                        BatteryNumDown();
+                       
                         batteryOnOff = true;
                         batterybar1.SetActive(true);
                         nowbattery = maxbattery;
@@ -223,7 +225,8 @@ public class PlayerController : MonoBehaviour
                 {
                     if (Input.GetKeyDown(KeyCode.R))
                     {
-                        batterynum -= 1;
+                        //batterynum -= 1;
+                        BatteryNumDown();
                         flashilightstate = false;
                         flashlight.SetActive(false);
                         batterybar1.SetActive(true);
@@ -527,6 +530,8 @@ public class PlayerController : MonoBehaviour
 
     }
 
+
+
     public void PlayerRayCast()
     {
         RaycastHit hit;
@@ -580,6 +585,15 @@ public class PlayerController : MonoBehaviour
 
         }
 
+    }
+
+    public void BatteryNumUp()
+    {
+        batterynum += 1;
+    }
+    public void BatteryNumDown()
+    {
+        batterynum -= 1;
     }
 
     public void batterysystem()//손전등 배터리 관련 함수
