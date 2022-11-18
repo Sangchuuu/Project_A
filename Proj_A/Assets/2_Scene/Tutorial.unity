@@ -8932,7 +8932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6318560930078310440, guid: d52ba9de5b76a6c42bd69ff3b75ef653, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.9
+      value: -33.81
       objectReference: {fileID: 0}
     - target: {fileID: 6318560930078310440, guid: d52ba9de5b76a6c42bd69ff3b75ef653, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8940,7 +8940,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6318560930078310440, guid: d52ba9de5b76a6c42bd69ff3b75ef653, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.8
+      value: 7.51
       objectReference: {fileID: 0}
     - target: {fileID: 6318560930078310440, guid: d52ba9de5b76a6c42bd69ff3b75ef653, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12606,7 +12606,7 @@ MonoBehaviour:
   PlayerRaycastL: 5
   maxbattery: 100
   secbattery: 1
-  batterynum: 5
+  batterynum: 1
   battery1_Off: 7
   battery1_On: 0.7
   battery2_Off: 5
@@ -15038,7 +15038,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 908770926}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99999875
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -15862,7 +15862,11 @@ MonoBehaviour:
   maxSpawnMonster: 0
   curSpawnMonster: 0
   bigZones: []
+  middleZones: []
+  smallZones: []
   bigRooms: []
+  middleRooms: []
+  smallRooms: []
   InventoryRayout: {fileID: 309360501}
   inventoryopen: 0
 --- !u!1 &1421495985
@@ -20540,7 +20544,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00081109063}
+  m_AnchoredPosition: {x: 0, y: 0.0008537164}
   m_SizeDelta: {x: -259.429, y: 167.768}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1880387663
@@ -21597,7 +21601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 572e19016b678e14e8180c9a3a7406c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 5
+  range: 2
   layerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -23694,7 +23698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6318560930078310440, guid: d52ba9de5b76a6c42bd69ff3b75ef653, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.9
+      value: -30.42
       objectReference: {fileID: 0}
     - target: {fileID: 6318560930078310440, guid: d52ba9de5b76a6c42bd69ff3b75ef653, type: 3}
       propertyPath: m_LocalPosition.y
