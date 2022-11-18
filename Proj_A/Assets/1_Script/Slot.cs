@@ -30,10 +30,13 @@ public class Slot : MonoBehaviour,IPointerClickHandler
     [SerializeField]
     private Text text_Iteminfo;
 
+    public int ctrl_flashlight;
+
+    public static PlayerController playercontroller;
 
     // Start is called before the first frame update
     void Start()
-    {       
+    {              
         ClearSlot();
     }
 
@@ -44,7 +47,35 @@ public class Slot : MonoBehaviour,IPointerClickHandler
         //    SetSlotCount(itemcount);
         ImageClose();
         CheckAction();
+        //CheckBattery();
     }
+
+    /*public void CheckBattery()
+    {
+        if (item != null)
+        {
+            if (item.itemtype == Item.ItemType.USEAGE)
+            {
+                if (item.itemName == "배터리") // 슬롯 내의 아이템 이름 비교 후, 이름이 배터리일때 카운트 감소
+                {
+
+                    ctrl_flashlight = itemcount;
+
+                }
+            }
+        }
+
+        else
+        {
+            ctrl_flashlight = 0;
+        }
+
+
+    }*/
+
+
+
+
 
     private void CheckAction()
     {
@@ -58,7 +89,10 @@ public class Slot : MonoBehaviour,IPointerClickHandler
                     {
                         if (itemcount > 0)
                         {
+                            playercontroller = FindObjectOfType<PlayerController>();
                             SetSlotCount(-1);
+                            playercontroller.BatteryNumUp();
+
                         }
                     }
                 }
@@ -136,6 +170,11 @@ public class Slot : MonoBehaviour,IPointerClickHandler
                     if (itemcount > 0)
                     {
                         SetSlotCount(-1);
+                        if(item.itemName == "배터리")
+                        {
+                            playercontroller = FindObjectOfType<PlayerController>();
+                            playercontroller.BatteryNumUp();
+                        }
                     }
                 }
                 else if (item.itemtype == Item.ItemType.STORY)

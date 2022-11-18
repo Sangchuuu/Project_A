@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class PlayerController : MonoBehaviour
 {
@@ -114,8 +115,11 @@ public class PlayerController : MonoBehaviour
     private bool walkOn = false;
     private bool RunOn = false;
 
+    public static Slot slot;
+
     void Start()
     {
+       
         animator = GetComponent<Animator>();
 
         Playerrigidbody = GetComponent<Rigidbody>();
@@ -137,6 +141,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+       
         //Debug.Log("플레이어 상태 : "+playermovestate);
         PlayerRayCast();
         StaminaBarController(nowstamina, maxstamina);
@@ -204,34 +209,8 @@ public class PlayerController : MonoBehaviour
         Camerafollow();
         PlayerRotate();
 
-        if(playermovestate == 1 || playermovestate == 2 || playermovestate == 6) //베터리 교체
-        {
-            if (batterynum > 0)
-            {
-                if(batteryOnOff == false)
-                {
-                    if (Input.GetKeyDown(KeyCode.R))
-                    {
-                        BatteryNumDown();
-                        batteryOnOff = true;
-                        batterybar1.SetActive(true);
-                        nowbattery = maxbattery;
-                    }
-                }
-
-                if (nowbattery < maxbattery*battery1state)
-                {
-                    if (Input.GetKeyDown(KeyCode.R))
-                    {
-                        BatteryNumDown();
-                        flashilightstate = false;
-                        flashlight.SetActive(false);
-                        batterybar1.SetActive(true);
-                        nowbattery = maxbattery;
-                    }
-                }
-            }
-        }
+        FlashUseLogic();
+       
 
         batterysystem();
         batterBarController(nowbattery, maxbattery);
@@ -526,6 +505,43 @@ public class PlayerController : MonoBehaviour
         batterybar1.transform.localScale = new Vector2(staminabarmax.x, rectsize);
 
     }
+
+   
+    public void FlashUseLogic()
+    {
+
+        if (playermovestate == 1 || playermovestate == 2 || playermovestate == 6) //베터리 교체
+        {
+            if (batterynum > 0)
+            {
+                if (batteryOnOff == false)
+                {
+                    if (Input.GetKeyDown(KeyCode.Q))
+                    {                       
+                        batteryOnOff = true;
+                        batterybar1.SetActive(true);
+                        nowbattery = maxbattery;
+                        BatteryNumDown();
+                    }
+                }
+
+                if (nowbattery < maxbattery * battery1state)
+                {
+                    if (Input.GetKeyDown(KeyCode.Q))
+                    {                       
+                        flashilightstate = false;
+                        flashlight.SetActive(false);
+                        batterybar1.SetActive(true);
+                        nowbattery = maxbattery;
+                        BatteryNumDown();
+                    }
+                }
+            }
+        }
+
+        Debug.Log("Battery : " + batterynum);
+    }
+
 
     public void PlayerRayCast()
     {
