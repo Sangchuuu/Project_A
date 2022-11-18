@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class PlayerController : MonoBehaviour
 {
@@ -209,6 +210,7 @@ public class PlayerController : MonoBehaviour
         PlayerRotate();
 
         FlashUseLogic();
+       
 
         batterysystem();
         batterBarController(nowbattery, maxbattery);
@@ -504,6 +506,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
+   
     public void FlashUseLogic()
     {
 

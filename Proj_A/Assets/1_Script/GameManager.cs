@@ -38,10 +38,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private bool inventoryopen;
 
-
-
-
-    //private static GameManager _instance;
+    [SerializeField]
+    private RectTransform go_Inventory;
+   //private static GameManager _instance;
     /*
     public static GameManager Instance
     {
@@ -80,8 +79,8 @@ public class GameManager : MonoBehaviour
         SmallRoomSpawn();
 
         inventoryopen = false;
-        InventoryRayout.gameObject.SetActive(inventoryopen);
-        
+        go_Inventory.anchoredPosition = Vector3.up * 3000;
+
     }
 
     // Update is called once per frame
@@ -215,13 +214,15 @@ public class GameManager : MonoBehaviour
     {
         if (open == true)
         {
-            InventoryRayout.gameObject.SetActive(open);
+            //InventoryRayout.gameObject.SetActive(open);
+            go_Inventory.anchoredPosition = Vector3.zero;
             Time.timeScale = 0f;
         }
         else
         {
             Time.timeScale = 1f;
-            InventoryRayout.gameObject.SetActive(open);
+            //InventoryRayout.gameObject.SetActive(open);
+            go_Inventory.anchoredPosition = Vector3.up * 3000;
         }
     }
 
