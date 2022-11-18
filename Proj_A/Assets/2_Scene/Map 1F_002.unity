@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.10162685, g: 0.10706269, b: 0.10103492, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12641,7 +12641,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &477378184
 Light:
   m_ObjectHideFlags: 0
@@ -44698,6 +44698,56 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1634953496720489472, guid: 0d8d6ab0ede56d14997d4a1222687bda, type: 3}
   m_PrefabInstance: {fileID: 1733848184}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1734779983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1734779985}
+  - component: {fileID: 1734779984}
+  m_Layer: 0
+  m_Name: RoomSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1734779984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734779983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef3c637b990f23547bfd7b4e49f81d19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bigZones: []
+  middleZones: []
+  smallZones: []
+  bigRooms: []
+  middleRooms: []
+  smallRooms: []
+--- !u!4 &1734779985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734779983}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 86.138855, y: 1.6179047, z: 65.37188}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1736514470 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5137853570293794919, guid: 12f1ea418f818bf449060f3816d4e8cb, type: 3}
@@ -46912,6 +46962,8 @@ MonoBehaviour:
   isTutorial: 0
   maxSpawnMonster: 5
   curSpawnMonster: 0
+  InventoryRayout: {fileID: 0}
+  inventoryopen: 0
 --- !u!1001 &1845472058
 PrefabInstance:
   m_ObjectHideFlags: 0
