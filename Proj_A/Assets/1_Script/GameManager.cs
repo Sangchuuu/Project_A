@@ -5,16 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField]
-    private Transform[] enemyZones;
-    [SerializeField]
-    private GameObject[] monsters;
-    [SerializeField]
-    private bool isTutorial;
-    [SerializeField]
-    private int maxSpawnMonster;
-    [SerializeField]
-    private int curSpawnMonster;
+    
     
 
     
@@ -85,24 +76,6 @@ public class GameManager : MonoBehaviour
         }   
 
     } 
-
-    IEnumerator SpawnEnemy()
-    {
-        //소환될 몬스터
-        int ranEnemy = Random.Range(0, 3);
-        //소환될 위치
-        int ranPoint = Random.Range(0, 4);
-        Instantiate(monsters[ranEnemy],
-                    enemyZones[ranPoint].position,
-                    enemyZones[ranPoint].rotation);
-        curSpawnMonster++;
-
-        yield return null;
-    }
-
-    
-
-
 
     public void OpenInventoryUI(bool open)
     {
