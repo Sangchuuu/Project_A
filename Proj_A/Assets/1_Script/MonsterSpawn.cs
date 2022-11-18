@@ -15,9 +15,10 @@ public class MonsterSpawn : MonoBehaviour
     [SerializeField]
     private int curSpawnMonster;
     // Start is called before the first frame update
-    void Start()
+    void Update()
     {
-        StartCoroutine(SpawnEnemy());
+        if(curSpawnMonster<maxSpawnMonster)
+            StartCoroutine(SpawnEnemy());
     }
     // Update is called once per frame
     

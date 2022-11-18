@@ -17,7 +17,7 @@ public class NextStage : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             loading.SetActive(true);
-            Invoke("Change", 2f);
+            Invoke("Change", 1f);
             
         }
             
@@ -25,6 +25,6 @@ public class NextStage : MonoBehaviour
 
     void Change()
     {
-        gameManager.TestStage();
+        gameManager.StageChange();
     }
 }
