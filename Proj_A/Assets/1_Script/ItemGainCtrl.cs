@@ -57,7 +57,7 @@ public class ItemGainCtrl : MonoBehaviour
         if (Physics.Raycast(this.transform.position, transform.forward, out hitInfo, range, layerMask))
         {
 
-            Debug.Log("Ray: ", hitInfo.collider.gameObject);
+            //Debug.Log("Ray: ", hitInfo.collider.gameObject);
             if (hitInfo.collider.gameObject.tag == "Item")
             {
                 //Gizmos.DrawRay(transform.position, transform.forward * hitInfo.distance);
@@ -77,7 +77,7 @@ public class ItemGainCtrl : MonoBehaviour
     {
         pickupActivated = true;
         actionText.gameObject.SetActive(true);
-        actionText.text = hitInfo.transform.GetComponent<ItemPickup>().item.itemName + "È¹µæ" + "<color=yellow>" + "(RClick)" + "</color>";
+        actionText.text = hitInfo.transform.GetComponent<ItemPickup>().item.itemName + "È¹µæ" + "<color=yellow>" + "(LeftClick)" + "</color>";
 
     }
 

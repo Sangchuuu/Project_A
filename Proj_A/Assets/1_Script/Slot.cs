@@ -90,8 +90,11 @@ public class Slot : MonoBehaviour,IPointerClickHandler
                         if (itemcount > 0)
                         {
                             playercontroller = FindObjectOfType<PlayerController>();
-                            SetSlotCount(-1);
-                            playercontroller.BatteryNumUp();
+                            if (playercontroller.batterynum < 1 && playercontroller.batterynum >= 0)
+                            {
+                                SetSlotCount(-1);
+                                playercontroller.BatteryNumUp();
+                            }
 
                         }
                     }
@@ -146,6 +149,12 @@ public class Slot : MonoBehaviour,IPointerClickHandler
             /*text_ItemName.text = "????";
             text_Iteminfo.text = "????? ?????? ???????\n ?????????? ????????????";*/
         }
+        else
+        {
+            Color color = itemimage.GetComponent<Image>().color;
+            color.a = 1f;
+            itemimage.GetComponent<Image>().color = color;
+        }
     }
 
     private void ClearSlot() // 슬롯 삭제(지금 안씀)
@@ -155,6 +164,8 @@ public class Slot : MonoBehaviour,IPointerClickHandler
         itemimage.sprite = null;
         SetColor(0);
 
+        text_ItemName.text = null;
+        text_Iteminfo.text = null;
         text_Count.text = "0";
         CountImage.SetActive(false);
     }
@@ -169,11 +180,19 @@ public class Slot : MonoBehaviour,IPointerClickHandler
                 {
                     if (itemcount > 0)
                     {
-                        SetSlotCount(-1);
+                       
                         if(item.itemName == "배터리")
                         {
                             playercontroller = FindObjectOfType<PlayerController>();
-                            playercontroller.BatteryNumUp();
+                            if(playercontroller.batterynum < 1 && playercontroller.batterynum >= 0) 
+                            {
+                                playercontroller.BatteryNumUp();
+                                SetSlotCount(-1);
+                            }                           
+                        }
+                        else
+                        {
+                            SetSlotCount(-1);
                         }
                     }
                 }

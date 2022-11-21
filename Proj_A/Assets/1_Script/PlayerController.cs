@@ -218,7 +218,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-        Debug.Log(batterynum + " °³ : " + nowbattery);
+        //Debug.Log(batterynum + " °³ : " + nowbattery);
 
         if (jumpstate == false)
         {
@@ -539,7 +539,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        Debug.Log("Battery : " + batterynum);
+        //Debug.Log("Battery : " + batterynum);
     }
 
 
